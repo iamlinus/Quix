@@ -153,26 +153,37 @@ Custom functions, support, custom post types and more.
 	// If Dynamic Sidebar Exists
 	if(function_exists('register_sidebar')) {
 	
-		// Define Sidebar Widget Area 1
+		// Detta är för att kunna sätta Login-knappen dynamiskt
 		register_sidebar(array(
-			'name' => __( 'Widget Area 1', 'html5blank' ),
-		    'description' => __( 'Discription for this widget-area...', 'html5blank' ),
-			'id' => 'widget-area-1',
-			'before_widget' => '<div id="%1$s" class="%2$s">',
+			'name' => __( 'Login link', 'html5blank' ),
+			'id' => 'loginlink',
+			'description' => __( 'Skriv HTML för länktext och länk för Login-menyvalet', 'html5blank' ),
+			'before_widget' => '<div class="login">',
 			'after_widget' => '</div>',
-			'before_title' => '<h3>',
-			'after_title' => '</h3>',
+			'before_title' => '',
+			'after_title' => '',
 		));
 		
-		// Define Sidebar Widget Area 2
+		// Detta är övre raden i sidfoten
 		register_sidebar(array(
-			'name' => __( 'Widget Area 2', 'html5blank' ),
-			'description' => __( 'Discription for this widget-area...', 'html5blank' ),
-			'id' => 'widget-area-2',
+			'name' => __( 'Sidfot Övre', 'html5blank' ),
+			'description' => __( 'Detta är övre raden i sidfoten. Kan innehålla 2 text-ytor med HTML.', 'html5blank' ),
+			'id' => 'footerupper',
 			'before_widget' => '<div id="%1$s" class="%2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h3>',
-			'after_title' => '</h3>',
+			'before_title' => '',
+			'after_title' => ' ',
+		));
+
+		// Detta är undre raden i sidfoten
+		register_sidebar(array(
+			'name' => __( 'Sidfot Undre', 'html5blank' ),
+			'description' => __( 'Detta är undre raden i sidfoten. Kan innehålla 2 text-ytor med HTML.', 'html5blank' ),
+			'id' => 'footerlower',
+			'before_widget' => '<div id="%1$s" class="%2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '',
+			'after_title' => ' ',
 		));
 	}
 

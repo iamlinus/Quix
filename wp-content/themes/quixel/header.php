@@ -35,14 +35,14 @@
 			
 			<!-- Nav -->
 			<nav>
-				<?php wp_nav_menu(array('theme_location' => 'header-menu', 'items_wrap' => '<ul>%3$s</ul>')); ?>
+				<?php wp_nav_menu(array('theme_location' => 'header-menu', 'items_wrap' => '<ul>%3$s</ul>', 'depth' => 1)); ?>
+				<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('loginlink')) ?>
 			</nav>
 			<!-- /Nav -->
 			
 			<br class="clear">
 			
-		</div>
-		<!-- /Wrapper -->
+		</div><!-- /Wrapper -->
 	
 	</header>
 	<!-- /Header -->
