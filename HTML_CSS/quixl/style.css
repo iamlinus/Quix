@@ -1,0 +1,126 @@
+/* HTML elements */
+body{background:#181818 url(images/bild.jpg) top left;color:#555;font-family:'Lato',Tahoma,Arial,sans-serif;font-size:13px;line-height:1.5em;}
+a{color:#696c3d;text-decoration:none;}
+a:hover{color:#555;text-decoration:none;}
+a img{border:none;}
+h1,h2,h3,h4{clear:left;color:#fff;font-weight:400;margin:0.7em 0;font-family:'Gentium Basic';}
+h1{font-size:2.4em;}
+h2{font-size:2.1em;}
+h3{font-size:1.6em;}
+p,ul{margin:0 0 20px 0;}
+
+/* Main wrappers */
+
+#wrapper964{margin:20px auto;width:964px;}
+#wrapper964{background:#292929; url(images/bild.jpg) top left;box-shadow:#111 0 0 20px;}
+
+/* Layout IDs */
+#header{position:relative;}
+#sitetitle{float:left;margin:10px 0 0px 10px; background:#fff url(images/logga.jpg); width:207px; height:72px;}
+#sitetitle h1 {font-size:36px;color:#fff;margin:0;padding:0;}
+#header-image{height:207px;margin:0;padding:0;}
+#content{padding:15px 0px;background-color:#181818;color:#ddd;}
+#content h2,#content h3,#content h4{color:#FFF;}
+#content a{color:#fff;text-decoration:none;}
+
+/* Container styling */
+#toplinks, #content, #footer{background:none;background-color:#181818;}
+
+/* Top links menu */
+#toplinks{padding:0 30px; height:90px;}
+#toplinks ul{list-style:none;margin:0;text-align:right;}
+#toplinks ul li{display:inline-block;font-size:12px;margin:65px 0 8px 39px;}
+#toplinks ul li a{color:#dadddd;text-shadow: 3px 1px 2px rgba(150, 150, 150, 1);}
+#toplinks ul li a:hover{color:#fff;text-decoration:none;}
+
+
+
+/* Navigation menu */
+#nav{float:left;font-family:Verdana,Tahoma,sans-serif;text-align:center; background-color:#292929;}
+#nav ul{list-style:none;margin:30px 30px 26px 20px;}
+#nav ul li{background:none;display:inline-block;text-align:right;height:auto;line-height:25px;margin-bottom:0;margin-left:25px;position:relative;}
+#nav ul li a{color:#FFF;display:block;font-size:20px;padding-top:0;text-transform:uppercase;text-shadow: 3px 1px 2px rgba(150, 150, 150, 1);}
+#nav ul li a:hover{color:#000;}
+#nav ul li a.current{color:#FFF;}
+
+/* Lower navigation menu */
+#lownav{clear:both;font-family:Verdana,Tahoma,sans-serif;text-align:left; background:#fff url(images/lownav.jpg); height:37px; width:964px;}
+#lownav ul{list-style:none;margin:12px 100px 26px 20px;}
+#lownav ul li{background:none;display:inline-block;text-align:left;height:auto;line-height:25px;padding-left:30px;margin-bottom:-20px;margin-top:5px;margin-left:0px;position:relative;}
+#lownav ul li a{color:#CCC;display:block;font-size:20px;padding-top:1px; margin-left:30px; text-transform:uppercase; text-decoration:none; text-shadow: 3px 1px 2px rgba(150, 150, 150, 1);}
+#lownav ul li a:hover{color:#FFF;}
+#lownav ul li a.current{color:#FFF;}
+
+/* Columns */
+#vanster{float:left;width:25%;}
+#mitt{float:left;width:25%;}
+#mitt2{float:left;width:25%;}
+#hoger{float:right;width:25%;}
+.inner{margin:15px 45px 50px;}
+
+/* Testimonials */
+#testimonials{clear:both;font-family:Verdana,Tahoma,sans-serif;text-align:left; height:86px; width:964px; padding-top:20px;}
+#testimonial1{float:left;width:25%; height:86px; background:#fff url(images/testimonials.jpg);}
+#testimonial2{float:left;width:25%; height:86px; background:#fff url(images/testimonials.jpg);}
+#testimonial3{float:left;width:25%; height:86px; background:#fff url(images/testimonials.jpg);}
+#testimonial4{float:right;width:25%; height:86px; background:#fff url(images/testimonials.jpg);}
+.inner2{margin:35px 0px 30px 70px;}
+
+/* Footer */
+#footer{clear:both;background:none;background-color:#404040; height:63px; width:964px; margin-bottom:-30px;}
+#footer p{color:#000;font-size:12px;margin-bottom:0px;padding:23px 30px;text-align:center;}
+#footer a{color:#000;}
+#footer a:hover{color:#CCC;}
+
+/* Image alignment */
+img.alignleft,img.aligncenter,img.alignright{background:#fff;padding:4px;margin-bottom:10px;border:1px solid #ddd;}
+.alignleft{float:left;margin-right:30px;}
+.alignright{float:right;margin-left:30px;}
+.aligncenter{text-align:center;display:block;clear:both;margin:5px auto;}
+
+/* Additional classes */
+.shadow{background:url(images/shadow.png) top center no-repeat;}
+.clear{clear:both;}
+.left{float:left;}
+.right{float:right;}
+
+
+.clearfix:after{clear:both;content:".";display:block;height:0;visibility:hidden;}
+* html .clearfix{height:1%;}
+*:first-child+html .clearfix{min-height:1%;}
+
+/*
+ jQuery Nivo Slider v2.7.1
+ http://nivo.dev7studios.com
+ Copyright 2011, Gilbert Pellegrom
+ Free to use and abuse under the MIT license.
+ http://www.opensource.org/licenses/mit-license.php
+ */
+.nivoSlider{position:relative;}
+.nivoSlider img{position:absolute;top:0;left:0;}
+.nivoSlider a.nivo-imageLink{position:absolute;top:0;left:0;width:100%;height:100%;border:0;padding:0;margin:0;z-index:6;display:none;}
+.nivo-slice{display:block;position:absolute;z-index:5;height:100%;}
+.nivo-box{display:block;position:absolute;z-index:5;}
+.nivo-caption{position:absolute;left:0;bottom:0;background:#000;color:#fff;opacity:0.8;width:100%;z-index:8;}
+.nivo-caption p{padding:5px;margin:0;}
+.nivo-caption a{display:inline!important;}
+.nivo-html-caption{display:none;}
+.nivo-directionNav a{position:absolute;top:45%;z-index:9;cursor:pointer;}
+.nivo-prevNav{left:0;}
+.nivo-nextNav{right:0;}
+.nivo-controlNav a{position:relative;z-index:9;cursor:pointer;}
+.nivo-controlNav a.active{font-weight:700;}
+
+/*Nivo Slider styling*/
+.slider-wrapper .nivoSlider{position:absolute;height:300px;top:0px;right:19%;background:#1a1a1a url(images/loading.gif) no-repeat 50% 50%;margin-bottom:-26px;}
+.slider-wrapper .nivoSlider img{position:absolute;top:0px;left:0;display:none;}
+.slider-wrapper .nivoSlider a{border:0;display:block;}
+.slider-wrapper .nivo-controlNav{position:absolute;left:50%;bottom:0px;margin-left:-60px;/* Tweak this to center bullets */}
+.slider-wrapper .nivo-controlNav a{display:block;width:22px;height:22px;background:url(images/bullets.png) no-repeat;text-indent:-9999px;border:0;margin-right:3px;float:left;}
+.slider-wrapper .nivo-controlNav a.active{background-position:0 -22px;}
+.slider-wrapper .nivo-directionNav a{display:block;width:30px;height:30px;background:url(images/arrows.png) no-repeat;text-indent:-9999px;border:0;}
+.slider-wrapper a.nivo-nextNav{background-position:-30px 0;right:15px;}
+.slider-wrapper a.nivo-prevNav{left:15px;}
+.slider-wrapper .nivo-caption{font-family:'Lato',Helvetica,Arial,sans-serif;background:rgba(0, 0, 0, 0.2);text-align:center;text-shadow:0 0 4px #111;}
+.slider-wrapper .nivo-caption a{color:#fff;border-bottom:1px dotted #fff;}
+.slider-wrapper .nivo-caption a:hover{color:#fff;}
