@@ -51,12 +51,18 @@
 					$img = $row['slideshowImg'];
 					$link = $row['slideshowLink'];
 					$content = $row['slideshowContent'];
-					$lightbox = $row['slideshowLightbox'];
+					$shadowbox = $row['slideshowShadowbox'];
+					// Ta bort HTML-taggar från $content och spara som $alt
+					$alt = strip_tags($content);
 
 					// Kolla om lightbox är förkryssat, skriv isåfall ut rel="lightbox"
-					if($lightbox == TRUE)
+					if($row['slideshowShadowbox'] == TRUE)
 					{
-						$relLightbox = 'rel="lightbox"';
+						$relShadowbox = 'rel="shadowbox"';
+					}
+					else
+					{
+						$relShadowbox = '';
 					}
 
 					/* Skriv ut värdena så vi ser vad vi får
@@ -70,8 +76,8 @@
 
 					// Skriv ut värdena i sina riktiga HTML-taggar
 					echo '<div style="float:left; width:220px; margin:20px;" class="thumbnail">';
-					echo '<a ' . $relLightbox . ' title="' . $content . '" href="' . $link . '"><img alt="' . $content . '" src="' . $img . '"></a>';
-					echo '<p>' . $content . '</p>';
+					echo "<a title='$alt' href='$link' $relShadowbox><img alt='$alt' src='$img'></a>";
+					echo "<p> $content </p>";
 					echo '</div>';
 				}
 				echo '</div>';
@@ -108,7 +114,17 @@
 						$link = $row['masterLearningLink'];
 						$headline = $row['masterLearningHeadline'];
 						$subtitle = $row['masterLearningSubtitle'];
+						$alt = strip_tags($headline . " - " . $subtitle);
 
+						//Sätt variablerna om fälten inte är lika med 0
+						if ($row['masterLearningWidth'] != 0)
+						{
+							$width = ";width=" . $row['masterLearningWidth'];
+						}
+						if ($row['masterLearningHeight'] != 0)
+						{
+							$height = ";height=" . $row['masterLearningHeight'];
+						}
 
 						/* Skriv ut värdena så vi ser vad vi får 
 						echo $img . "<br>";
@@ -117,13 +133,12 @@
 						echo $subtitle . "<br>" ;
 						echo "<hr>"; */
 
-
 						// Skriv ut värdena i sina riktiga HTML-taggar
 						echo '<div style="float:left; width:220px; margin:20px;" class="thumbnail">';
-						echo '<a title="' . $headline . " - " . $subtitle . '" href="' . $link . '" rel="lightbox"><img alt="' . $headline . " - " . $subtitle . '" src="' . $img . '"></a>';
-						echo '<p>' . $headline . '</p>';
-						echo '<p>' . $subtitle . '</p>';
-						echo '</div>';
+						echo "<a title='$alt' href='$link' rel='shadowbox$width$height'><img alt='$alt' src='$img'></a>";
+						echo "<p>$headline</p>";
+						echo "<p>$subtitle</p>";
+						echo "</div>";
 
 					}
 					echo '</div>';
@@ -145,22 +160,25 @@
 						$link = $row['toolSpecLink'];
 						$headline = $row['toolSpecHeadline'];
 						$subtitle = $row['toolSpecSubtitle'];
+						$alt = strip_tags($headline . " - " . $subtitle);
 
+						//Sätt variablerna för bredd och höjd om fälten inte är lika med 0
+						if ($row['toolSpecsWidth'] != 0)
+						{
+							$width = ";width=" . $row['toolSpecsWidth'];
+						}
 
-						/* Skriv ut värdena så vi ser vad vi får 
-						echo $img . "<br>";
-						echo $link . "<br>" ;
-						echo $headline . "<br>" ;
-						echo $subtitle . "<br>" ;
-						echo "<hr>"; */
-
+						if ($row['toolSpecsHeight'] != 0)
+						{
+							$height = ";height=" . $row['toolSpecsHeight'];
+						}
 
 						// Skriv ut värdena i sina riktiga HTML-taggar
 						echo '<div style="float:left; width:220px; margin:20px;" class="thumbnail">';
-						echo '<a title="' . $headline . " - " . $subtitle . '" href="' . $link . '" rel="lightbox"><img alt="' . $headline . " - " . $subtitle . '" src="' . $img . '"></a>';
-						echo '<p>' . $headline . '</p>';
-						echo '<p>' . $subtitle . '</p>';
-						echo '</div>';
+						echo "<a title='$alt' href='$link' rel='shadowbox$width$height'><img alt='$alt' src='$img'></a>";
+						echo "<p>$headline</p>";
+						echo "<p>$subtitle</p>";
+						echo "</div>";
 
 					}
 					echo '</div>';
@@ -187,6 +205,7 @@
 						$link = $row['testimonialLink'];
 						$headline = $row['testimonialHeadline'];
 						$subtitle = $row['testimonialSubtitle'];
+						$alt = strip_tags($headline . " - " . $subtitle);
 
 
 						/* Skriv ut värdena så vi ser vad vi får 
@@ -200,7 +219,7 @@
 						echo '<div style="float:left; width:220px; margin:20px;" class="thumbnail">';
 						echo "<p>&ldquo;$headline&rdquo;</p>";
 						echo "<p>&ndash; $subtitle";
-						echo "<a title='$headline &ndash; $subtitle' href='$link' rel='lightbox'>FULL</a></p>";
+						echo "<a title='$alt' href='$link' rel='lightbox'> FULL</a></p>";
 						echo '</div>';
 
 					}
