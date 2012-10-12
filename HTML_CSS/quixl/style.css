@@ -16,7 +16,7 @@ p,ul{margin:0 0 20px 0;}
 
 /* Layout IDs */
 #header{position:relative;}
-#sitetitle{float:left;margin:10px 0 0px 10px; background:#fff url(images/logga.jpg); width:207px; height:72px;}
+#sitetitle{float:left;margin:10px 0 0px 10px; background:#fff url(images/logga.jpg); width:207px; height:72px; position:relative; z-index: 4;}
 #sitetitle h1 {font-size:36px;color:#fff;margin:0;padding:0;}
 #header-image{height:207px;margin:0;padding:0;}
 #content{padding:15px 0px;background-color:#181818;color:#ddd;}
@@ -30,8 +30,8 @@ p,ul{margin:0 0 20px 0;}
 #toplinks, #content, #footer{background:none;background-color:#181818;}
 
 /* Top links menu */
-#toplinks{padding:0 0px; height:90px;}
-#toplinks ul{list-style:none;margin:0;text-align:center;}
+#toplinks{padding:0 0px; height:90px; position:relative; margin-bottom:4px;}
+#toplinks ul{list-style:none;margin:0;text-align:center; position:relative; z-index: 4;}
 #toplinks ul li{display:inline-block;font-size:12px;margin:65px 0 8px 39px;}
 #toplinks ul li a{color:#dadddd;text-shadow: 3px 1px 2px rgba(150, 150, 150, 1);}
 #toplinks ul li a:hover{color:#fff;text-decoration:none;}
@@ -43,14 +43,15 @@ p,ul{margin:0 0 20px 0;}
 #login ul li a:hover{color:#fff;text-decoration:none;}
 
 /* Navigation menu */
-#nav{float:left;font-family:Verdana,Tahoma,sans-serif;text-align:center; background-color:#292929;}
-#nav ul{list-style:none;margin:30px 30px 26px 20px;}
+#nav{font-family:Verdana,Tahoma,sans-serif;text-align:center; background-color:#292929;}
+#nav ul{float:left; list-style:none;margin:30px 30px 26px 0px;}
 #nav ul li{background:none;display:inline-block;text-align:right;height:auto;line-height:25px;margin-bottom:0;margin-left:25px;position:relative;}
-#nav ul li a{color:#FFF;display:block;font-size:20px;padding-top:0;text-transform:uppercase;text-shadow: 3px 1px 2px rgba(150, 150, 150, 1);}
+#nav ul li a{color:#FFF;display:block;font-size:20px;padding-top:0;text-transform:uppercase;text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);}
 #nav ul li a:hover{color:#000;}
 #nav ul li a.current{color:#FFF;}
 
-#productlogo{height:132px; width:268px; float:right;}
+#productlogo{float:right; background:#fff url(images/ddo2.jpg); width:234px; height:116px; position:absolute; top:62px; left:708px;}
+#offer{float:left; background:#292929 url(images/offer.jpg); width:266px; height:85px; position:absolute; top:92px; left:400px;}
 
 /* Lower navigation menu */
 #lownav{clear:both;font-family:Verdana,Tahoma,sans-serif;text-align:left; background:#fff url(images/lownav.jpg); height:37px; width:964px;}
@@ -81,16 +82,24 @@ p,ul{margin:0 0 20px 0;}
 
 
 /* Footer */
-#footer{clear:both;background:none;background-color:#404040; height:63px; width:964px; margin-bottom:-30px;}
-#footer p{color:#000;font-size:12px;margin-bottom:0px;padding:23px 30px;text-align:center;}
+#footer{clear:both;background:none;background-color:#404040; height:31px; width:964px; margin-top:8px; padding-bottom:4px; border-top: 1px solid black;}
+#footer p{color:#000;font-size:12px;margin-bottom:0px;margin-left:10px; margin-right:10px; padding:8px 3px;text-align:left; text-shadow: 1px 1px 1px rgba(90, 90, 90, 1);}
 #footer a{color:#000;}
 #footer a:hover{color:#CCC;}
+
+#footer2{clear:both;background:none;background-color:#404040; height:31px; width:964px; margin-bottom:-26px; border-bottom: 1px solid black; border-top:1px solid black}
+#footer2 p{color:#000;font-size:12px;margin-top:2px; margin-bottom:-60px; padding:5px 0px; margin-left:10px; margin-right:10px; text-align:none; text-shadow: 1px 1px 1px rgba(90, 90, 90, 1);}
+#footer2 a{color:#000;}
+#footer2 a:hover{color:#CCC;}
 
 /* Additional classes */
 .shadow{background:url(images/shadow.png) top center no-repeat;}
 .clear{clear:both;}
 .left{float:left;}
 .right{float:right;}
+.rightfooter{float:right;}
+.leftfooter{float:left;}
+
 
 .boxshadow{box-shadow: 5px 5px #171717;
 -webkit-box-shadow: 5px 5px #171717;
