@@ -19,7 +19,7 @@ p,ul{margin:0 0 20px 0;}
 #sitetitle{float:left;margin:10px 0 0px 10px; background:#fff url(images/logga.jpg); width:207px; height:72px; position:relative; z-index: 4;}
 #sitetitle h1 {font-size:36px;color:#fff;margin:0;padding:0;}
 #header-image{height:207px;margin:0;padding:0;}
-#content{padding:15px 0px;background-color:#FFF;}
+#content{padding:0px 0px;background-color:#FFF;}
 #content h2,#content h3,#content h4{color:#FFF;}
 #content a{color:#fff;text-decoration:none;}
 
@@ -35,7 +35,7 @@ p,ul{margin:0 0 20px 0;}
 /* Top links menu */
 #toplinks{padding:0 0px; height:90px; position:relative; margin-bottom:0px;}
 #toplinks ul{list-style:none;margin:0;text-align:center; position:relative; z-index: 4;}
-#toplinks ul li{display:inline-block;font-size:12px;margin:65px 0 8px 39px;}
+#toplinks ul li{display:inline-block;font-size:12px;margin:65px 0 8px 25px;}
 #toplinks ul li a{color:#dadddd;text-shadow: 3px 1px 2px rgba(150, 150, 150, 1);}
 #toplinks ul li a:hover{color:#fff;text-decoration:none;}
 
@@ -46,15 +46,13 @@ p,ul{margin:0 0 20px 0;}
 #login ul li a:hover{color:#fff;text-decoration:none;}
 
 /* Navigation menu */
-#nav{font-family:Verdana,Tahoma,sans-serif;text-align:center; background-color:#292929; margin-top:4px;}
-#nav ul{float:left; list-style:none;margin:30px 30px 26px 0px;}
-#nav ul li{background:none;display:inline-block;text-align:right;height:auto;line-height:25px;margin-bottom:0;margin-left:25px;position:relative;}
-#nav ul li a{color:#FFF;display:block;font-size:20px;padding-top:0;text-transform:uppercase;text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);}
-#nav ul li a:hover{color:#000;}
-#nav ul li a.current{color:#FFF;}
+#nav{font-family:Verdana,Tahoma,sans-serif;text-align:center; background:#292929 url(images/navbackground.jpg);}
+#nav ul{float:left; list-style:none;margin:10px 10px 26px -22px;}
+#nav ul li{display:inline-block;text-align:right;height:auto;line-height:25px;margin-bottom:0;margin-left:-8px;position:relative;}
 
-#productlogo{float:right; background:#fff url(images/ddo2.jpg); width:234px; height:116px; position:absolute; top:62px; left:708px;}
-#offer{float:left; background:#292929 url(images/offer.jpg); width:266px; height:85px; position:absolute; top:92px; left:400px;}
+
+#productlogo{float:right; width:255px; height:136px; position:absolute; top:54px; left:690px; z-index: 3;}
+#offer{float:left; background:none; width:266px; height:85px; position:absolute; top:92px; left:434px;}
 
 /* Lower navigation menu */
 #lownav{clear:both;font-family:Verdana,Tahoma,sans-serif;text-align:left; background:#fff url(images/lownav.jpg); height:37px; width:964px;}
@@ -139,7 +137,7 @@ filter: progid:DXImageTransform.Microsoft.dropShadow(color=#171717, offX=5, offY
  Free to use and abuse under the MIT license.
  http://www.opensource.org/licenses/mit-license.php
  */
-.nivoSlider{position:relative;}
+.nivoSlider{position:relative; z-index:2;}
 .nivoSlider img{position:absolute;top:0;left:0;}
 .nivoSlider a.nivo-imageLink{position:absolute;top:0;left:0;width:100%;height:100%;border:0;padding:0;margin:0;z-index:6;display:none;}
 .nivo-slice{display:block;position:absolute;z-index:5;height:100%;}
@@ -155,7 +153,7 @@ filter: progid:DXImageTransform.Microsoft.dropShadow(color=#171717, offX=5, offY
 .nivo-controlNav a.active{font-weight:700;}
 
 /*Nivo Slider styling*/
-.slider-wrapper .nivoSlider{position:absolute;height:300px;top:0px;right:19%;background:#1a1a1a url(images/loading.gif) no-repeat 50% 50%;margin-bottom:-26px;}
+.slider-wrapper .nivoSlider{position:absolute;height:300px;top:-28px;right:19%;background:#1a1a1a url(images/loading.gif) no-repeat 50% 50%;margin-bottom:-26px;}
 .slider-wrapper .nivoSlider img{position:absolute;top:0px;left:0;display:none;}
 .slider-wrapper .nivoSlider a{border:0;display:block;}
 .slider-wrapper .nivo-controlNav{position:absolute;left:80%;bottom:0px;margin-left:-60px;/* Tweak this to center bullets */}
