@@ -29,21 +29,21 @@ p,ul{margin:0 0 20px 0;}
 #shopcontent{padding:20px 0px 20px 0px;background-color:#CCC; height:auto;}
 
 /* Container styling */
-#toplinks, #footer{background:none;background-color:#181818;}
+.menu, #footer{background:none;background-color:#181818;}
 #content {background:none;background-color:#CCC;}
 
-/* Top links menu */
-#toplinks{padding:0 0px; height:90px; position:relative; margin-bottom:0px;}
-#toplinks ul{list-style:none;margin:0;text-align:center; position:relative; z-index: 4;}
-#toplinks ul li{display:inline-block;font-size:12px;margin:65px 0 8px 39px;}
-#toplinks ul li a{color:#dadddd;text-shadow: 3px 1px 2px rgba(150, 150, 150, 1);}
-#toplinks ul li a:hover{color:#fff;text-decoration:none;}
+/* menu */
+.menu{padding:0 0px; height:90px; position:relative; margin-bottom:0px;}
+.menu ul{list-style:none;margin:0;text-align:center; position:relative; z-index: 4;}
+.menu ul li{display:inline-block;font-size:12px;margin:65px 0 8px 25px;}
+.menu ul li a{color:#dadddd;text-shadow: 3px 1px 2px rgba(150, 150, 150, 1);}
+.menu ul li a:hover{color:#fff;text-decoration:none;}
 
-#login{padding:0 15px; height:90px; float:right;}
-#login ul{list-style:none;margin:0;text-align:right;}
-#login ul li{display:inline-block;font-size:12px;margin:65px 0 8px 39px;}
-#login ul li a{color:#dadddd;text-shadow: 3px 1px 2px rgba(150, 150, 150, 1);}
-#login ul li a:hover{color:#fff;text-decoration:none;}
+.login{padding:0 15px; height:90px; float:right;}
+.login ul{list-style:none;margin:0;text-align:right;}
+.login ul li{display:inline-block;font-size:12px;margin:65px 0 8px 39px;}
+.login ul li a{color:#dadddd;text-shadow: 3px 1px 2px rgba(150, 150, 150, 1);}
+.login ul li a:hover{color:#fff;text-decoration:none;}
 
 /* Navigation menu */
 #nav{font-family:Verdana,Tahoma,sans-serif;text-align:center; background-color:#292929; margin-top:4px;}

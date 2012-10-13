@@ -53,18 +53,19 @@
 					<div class="textwidget">
 						<a href="login.php" title="Detta kommer från widgeten">Login (widget)</a>
 					</div>
-				</div>		
-			</nav> -->
+				</div>		-->
+	
 			
-	<div id="toplinks">
+	<div class="menu">
 		
-		<ul class="toplinks_links">
+		<ul>
 			<li><a href="#">DDO</a></li>
 			<li><a href="#">NDO</a></li>
 			<li><a href="#">STORE</a></li>
 			<li><a href="#">COMMUNITY</a></li>
 			<li><a href="#">CONTACT</a></li>
-		<div id="login">
+		
+		<div class="login">
 			<li><a href="#">LOGIN</a></li>
 		</div>
 		</ul>
@@ -80,7 +81,7 @@
 				
 			
 			<div id="offer">
-			<li><a class="current" href="#"><a href="#"><img src="images/offer.png"></a></li>  <!-- Här fattas den svarta texten. se design -->
+			<li><img src="images/offer.png"></a></li>  <!-- Här fattas den svarta texten. se design 2 p-taggar stylas grön och svart, stänga alla image taggar, lägga till alt-text -->
 			</div>
 			
 			<div id="productlogo">
@@ -94,13 +95,13 @@
 	<!-- Slider -->
 	<div class="slider-wrapper">
 		<div id="slider" class="nivoSlider">
-			<img src="images/slidertest.jpg" alt="" /> <!-- Är detta verkligen allt? Var är länken och bildtexten? -->
+			<img src="images/slidertest.jpg" alt="" /> <!-- Är detta verkligen allt? Var är länken och bildtexten? lägga till och styla textfält-->
 			<img src="images/slidertest.jpg" alt="" />
 			<img src="images/slidertest.jpg" alt="" />
 		</div>
 	</div>
 
-	<div id="content" class="clearfix">  <!-- Har du glömt stänga denna? -->
+	<div id="content" class="clearfix">
 		
 	<!-- Tredje menyn -->
 	<!-- OBS! Denna skapas dynamiskt av tabber.js
@@ -118,7 +119,7 @@
 
 	<div class="tabber"> <!-- JS letar efter "tabber" och "tabbertab" -->
 		<div class="tabbertab" title="Master Learning"> <!-- Här börjar Master learning -->
-			<div id="vanster">  <!-- Du kan inte ge dessa egna IDn då de skapas dynamiskt och vi inte vet hur många de är. -->
+			<div class="vanster">  <!-- Du kan inte ge dessa egna IDn då de skapas dynamiskt och vi inte vet hur många de är. -->
 				<div class="inner">
 					<h3>Tab1</h3>
 					<p>Bla bla bla</p>
@@ -185,27 +186,35 @@
 <!-- Testimonials -->	
 	<div id="testimonials">
 		
-		<div id="testimonial1"> <!-- Du kan inta sätta specifika IDn här för dessa skapas dynamiskt -->
+		<div id="testimonial"> <!-- Du kan inta sätta specifika IDn här för dessa skapas dynamiskt -->
 			<div class="inner2">
-				<h3>"Great"</h3> <!-- Det räcker inte med en H3a här. Det är ett namn till varje testimonial. Se design -->
+				<h3><a href="">"Great"</a></h3>
+				<p class="author">-Mark Smith</p>
+				<p class="full"><a href="">FULL</a></p>	<!-- Det räcker inte med en H3a här. Det är ett namn till varje testimonial. Se design -->
 			</div>	<!-- Dessa ska vara klickbara också -->
 		</div>
 
-		<div id="testimonial2">
+		<div id="testimonial">
 			<div class="inner2">
-				<h3>"Super"</h3>
+				<h3><a href="">"Super nice"</a></h3>
+				<p class="author">-Mark Smith</p>
+				<p class="full"><a href="">FULL</a></p>
 			</div>
 		</div>
 		
-		<div id="testimonial3">
+		<div id="testimonial">
 			<div class="inner2">
-				<h3>"Mindblowing"</h3>
+				<h3><a href="">"Mindblowing"</a></h3>
+				<p class="author">-Mark Smith</p>
+				<p class="full"><a href="">FULL</a></p>
 			</div>
 		</div>
 
-		<div id="testimonial4">
+		<div id="testimonial">
 			<div class="inner2">
-				<h3>"Sucks"</h3>
+				<h3><a href="">"Sucks"</a></h3>
+				<p class="author">-Mark Smith</p>
+				<p class="full"><a href="">FULL</a></p>
 			</div>
 		</div>
 		
@@ -236,7 +245,7 @@
 	</div>
 	<!-- Slut på Sidfot -->
 	
-</div>
+</div><!-- Här slutar content -->
 
 	<!-- Nivo Slider script -->
 <script type="text/javascript">
