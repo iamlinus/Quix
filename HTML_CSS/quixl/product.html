@@ -27,12 +27,35 @@
 <div id="wrapper964" class="clearfix">
 	
 	<!-- Header -->
-	<div id="header" class="clearfix">
-		<div id="sitetitle" class="clearfix">
+	<div id="header" class="clearfix"> <!-- Varför inte HTML5? -->
+		<div id="sitetitle" class="clearfix"> <!-- Var stänger du den diven? -->
 			<div id="header-image" class="clearfix"></div>
 	</div>
 	
-	<!-- Översta menyn -->
+	<!-- Översta menyn 
+
+	OBS!! Menyn MÅSTE stylas enligt classerna nedan. Det är så Wordpress genererar menyn
+
+				<div class="menu">
+					<ul>
+						<li class="">
+							<a href="http://quixel.se/?page_id=130">Basic sida</a>
+						</li>
+						<li class="">
+							<a href="http://quixel.se/?page_id=5">dDo</a>
+						</li>
+						<li class="">
+							<a href="http://quixel.se/?page_id=110">iFrames</a>
+						</li>
+					</ul>
+				</div>
+				<div class="login">
+					<div class="textwidget">
+						<a href="login.php" title="Detta kommer från widgeten">Login (widget)</a>
+					</div>
+				</div>		
+			</nav> -->
+			
 	<div id="toplinks">
 		
 		<ul class="toplinks_links">
@@ -56,7 +79,7 @@
 				<li><a href="#">BUY LICENSE</a></li>
 			
 			<div id="offer">
-			<li><a class="current" href="#"></a></li>
+			<li><a class="current" href="#"></a></li>  <!-- Här fattas den svarta texten. se design -->
 			</div>
 			
 			<div id="productlogo">
@@ -70,13 +93,13 @@
 	<!-- Slider -->
 	<div class="slider-wrapper">
 		<div id="slider" class="nivoSlider">
-			<img src="images/slidertest.jpg" alt="" />
+			<img src="images/slidertest.jpg" alt="" /> <!-- Är detta verkligen allt? Var är länken och bildtexten? -->
 			<img src="images/slidertest.jpg" alt="" />
 			<img src="images/slidertest.jpg" alt="" />
 		</div>
 	</div>
 
-	<div id="content" class="clearfix">
+	<div id="content" class="clearfix">  <!-- Har du glömt stänga denna? -->
 		
 	<!-- Tredje menyn -->
 	<!-- OBS! Denna skapas dynamiskt av tabber.js
@@ -94,7 +117,7 @@
 
 	<div class="tabber"> <!-- JS letar efter "tabber" och "tabbertab" -->
 		<div class="tabbertab" title="Master Learning"> <!-- Här börjar Master learning -->
-			<div id="vanster">
+			<div id="vanster">  <!-- Du kan inte ge dessa egna IDn då de skapas dynamiskt och vi inte vet hur många de är. -->
 				<div class="inner">
 					<h3>Tab1</h3>
 					<p>Bla bla bla</p>
@@ -161,10 +184,10 @@
 <!-- Testimonials -->	
 	<div id="testimonials">
 		
-		<div id="testimonial1">
+		<div id="testimonial1"> <!-- Du kan inta sätta specifika IDn här för dessa skapas dynamiskt -->
 			<div class="inner2">
-				<h3>"Great"</h3>
-			</div>
+				<h3>"Great"</h3> <!-- Det räcker inte med en H3a här. Det är ett namn till varje testimonial. Se design -->
+			</div>	<!-- Dessa ska vara klickbara också -->
 		</div>
 
 		<div id="testimonial2">

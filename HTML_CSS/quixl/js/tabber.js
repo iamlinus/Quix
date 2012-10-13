@@ -45,7 +45,7 @@ function tabberObj(argsObj)
   /* Rename classMain to classMainLive after tabifying
      (so a different style can be applied)
   */
-  this.classMainLive = "lownav";
+  this.classMainLive = "tabberlive";
 
   /* Class of each DIV that contains a tab */
   this.classTab = "tabbertab";
@@ -54,7 +54,7 @@ function tabberObj(argsObj)
   this.classTabDefault = "tabbertabdefault";
 
   /* Class for the navigation UL */
-  this.classNav = "tabbernav";
+  this.classNav = "lownav";
 
   /* When a tab is to be hidden, instead of setting display='none', we
      set the class of the div to classTabHide. In your screen
