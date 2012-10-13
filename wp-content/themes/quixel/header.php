@@ -23,39 +23,55 @@
 		Shadowbox.init();
 	</script>
 
-</head>
-<body <?php body_class(); ?>>
+	<!-- Nivo slider -->
+	<script type="text/javascript" src="/wp-content/themes/quixel/js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="/wp-content/themes/quixel/js/jquery.nivo.slider.js"></script>
 
-	<!-- Header -->
-	<header>
-	
-		<!-- Wrapper -->
-		<div class="wrapper">
-		
-			<!-- Logo -->
+	<!-- tabber.js -->
+	<script type="text/javascript" src="/wp-content/themes/quixel/js/tabber.js"></script>
+	<script type="text/javascript">
+
+	/* Optional: Temporarily hide the "tabber" class so it does not "flash" 
+	on the page as plain HTML. After tabber runs, the class is changed
+	to "tabberlive" and it will appear. */
+
+	document.write('<style type="text/css">.tabber{display:none;}<\/style>');
+	</script>
+
+</head>
+<body id="wrapper964" <?php body_class(); ?>>
+
+	<!-- Gamla HTMLn -->
+	<!-- Header
+	<header> -->
+		<!-- Wrapper
+		<div class="wrapper"> -->
+			<!-- Logo
 			<div id="logo">
 				<a href="/">
 					<img src="/wp-content/themes/quixel/img/logo.png" alt="Logo">
 				</a>
-			</div>
-			<!-- /Logo -->
-			
-			<!-- Nav -->
-			<nav>
-				<?php wp_nav_menu(array('theme_location' => 'header-menu', 'items_wrap' => '<ul>%3$s</ul>', 'depth' => 1)); ?>
-				<?php 
-					// Lägg dit "Login"-sidebaren som ska innehålla Login-knappen
-					if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('loginlink')) 
-				?>
-			</nav>
-			<!-- /Nav -->
-			
-			<br class="clear">
-			
-		</div><!-- /Wrapper -->
-	
-	</header>
-	<!-- /Header -->
+			</div> -->
+
+	<div id="header" class="clearfix">
+		<div id="sitetitle" class="clearfix">
+		<div id="header-image" class="clearfix">
+		</div>
+	</div>
+	<div id="nav" class="clearfix">
+		<?php wp_nav_menu(array('theme_location' => 'header-menu', 'items_wrap' => '<ul>%3$s</ul>', 'depth' => 1)); ?>
+		<?php 
+			// Lägg dit "Login"-sidebaren som ska innehålla Login-knappen
+			if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('loginlink')) 
+		?>
+	</div>
+				
+		<!-- </div>/Wrapper -->
+	<!-- </header>/Header -->
 	
 	<!-- Wrapper -->
 	<div class="wrapper">
+
+
+
+

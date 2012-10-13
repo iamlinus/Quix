@@ -1,8 +1,8 @@
 	<!-- Footer -->
-	<footer>
+	<div id="footer">
 		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('footerupper')) ?>
 		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('footerlower')) ?>
-	</footer>
+	</dic id="footer">
 	<!-- /Footer -->
 	
 	</div>
@@ -10,5 +10,12 @@
 	
 	<?php wp_footer(); ?>
 
+
+	<!-- Nivo Slider script -->
+<script type="text/javascript">
+	$(window).load(function() {
+		$('#slider').nivoSlider();
+	});
+</script>
 </body>
 </html>
