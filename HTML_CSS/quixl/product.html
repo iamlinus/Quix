@@ -7,8 +7,19 @@
 	<meta name="author" content="Your Name" />
 	<link href='' rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+
 	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+	<script type="text/javascript" src="js/tabber.js"></script>
+	<script type="text/javascript">
+
+/* Optional: Temporarily hide the "tabber" class so it does not "flash"
+   on the page as plain HTML. After tabber runs, the class is changed
+   to "tabberlive" and it will appear. */
+
+	document.write('<style type="text/css">.tabber{display:none;}<\/style>');
+	</script>
+
 	<title>Quixel Produkt</title>
 </head>
 
@@ -68,46 +79,83 @@
 	<div id="content" class="clearfix">
 		
 	<!-- Tredje menyn -->
+	<!-- OBS! Denna skapas dynamiskt av tabber.js
 		<div id="lownav">
 		<ul>
 		<li><a href="">Master Learning</a></li>
 		<li><a href="">TOOL SPECS</a></li>
 		<li><a href="">COMMUNITY HIGHLIGHTS</a></li>
 		</ul>
-		</div>
+		</div> -->
 
 
-	
-	<br><br><br>
-	<!-- 4 divar för innehållet i Master learning och Tool Specs   -->
-		<div id="vanster">
-			<div class="inner">
-				<h3>1111111111111</h3>
-				<p>Bla bla bla</p>
-			</div>
-		</div>
+	<!-- Innehållet i Master learning och Tool Specs -->
+	<!-- Title-attributet på diven sätter menyvalets namn -->
 
-		<div id="mitt">
-			<div class="inner">
-				<h3>2222222222222</h3>
-				<p>Hubba hubba hubba</p>
+	<div class="tabber"> <!-- JS letar efter "tabber" och "tabbertab" -->
+		<div class="tabbertab" title="Master Learning"> <!-- Här börjar Master learning -->
+			<div id="vanster">
+				<div class="inner">
+					<h3>Tab1</h3>
+					<p>Bla bla bla</p>
+				</div>
 			</div>
-		</div>
-		
-		<div id="mitt2">
-			<div class="inner">
-				<h3>3333333333333</h3>
-				<p>Hubba hubba hubba</p>
+			<div id="mitt">
+				<div class="inner">
+					<h3>2222222222222</h3>
+					<p>Hubba hubba hubba</p>
+				</div>
 			</div>
-		</div>
+			<div id="mitt2">
+				<div class="inner">
+					<h3>3333333333333</h3>
+					<p>Hubba hubba hubba</p>
+				</div>
+			</div>
+			<div id="hoger">
+				<div class="inner">
+					<h3>4444444444444</h3>
+					<p>jada jada jada</p>
+				</div>
+			</div>
+		</div> <!-- här slutar Master learning -->
 
-		<div id="hoger">
-			<div class="inner">
-				<h3>4444444444444</h3>
-				<p>jada jada jada</p>
+		<div class="tabbertab" title="Tool Specs"> <!-- Här börjar Tools specs -->
+			<h3>Tab2</h3>
+			<p>Bla bla bla</p>				
+		</div> <!-- här slutar Tool specs -->
+
+		<div class="tabbertab" title="Community Highlights"> <!-- Här börjar Community Highlights -->
+			<div id="vanster">
+				<div class="inner">
+					<h3>Tab3</h3>
+					<p>Bla bla bla</p>
+				</div>
 			</div>
-		</div>
-		
+
+			<div id="mitt">
+				<div class="inner">
+					<h3>2222222222222</h3>
+					<p>Hubba hubba hubba</p>
+				</div>
+			</div>
+			
+			<div id="mitt2">
+				<div class="inner">
+					<h3>3333333333333</h3>
+					<p>Hubba hubba hubba</p>
+				</div>
+			</div>
+
+			<div id="hoger">
+				<div class="inner">
+					<h3>4444444444444</h3>
+					<p>jada jada jada</p>
+				</div>
+			</div>
+		</div> <!-- här slutar Community Highlights -->
+
+	</div> <!-- här slutar tabber -->
 		<br><br><br><br>
 	
 <!-- Testimonials -->	

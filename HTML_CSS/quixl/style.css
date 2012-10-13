@@ -64,6 +64,19 @@ p,ul{margin:0 0 20px 0;}
 #lownav ul li a:hover{color:#FFF;}
 #lownav ul li a.current{color:#FFF;}
 
+/* Lower navigation menu. Class ist för ID pga tabber.js*/
+.lownav{clear:both;font-family:Verdana,Tahoma,sans-serif;text-align:left; background:#fff url(images/lownav.jpg); height:37px; width:964px;}
+.lownav ul{list-style:none;margin:12px 100px 26px 20px;}
+.lownav ul li{background:none;display:inline-block;text-align:left;height:auto;line-height:25px;padding-left:30px;margin-bottom:-20px;margin-top:5px;margin-left:0px;position:relative;}
+.lownav ul li a{color:#CCC !important;display:block;font-size:20px;padding-top:1px; margin-left:30px; text-transform:uppercase; text-decoration:none; text-shadow: 3px 1px 2px rgba(150, 150, 150, 1);}
+.lownav ul li a:hover{color:#FFF;}
+.lownav ul li a.current{color:#FFF;}
+
+/* Tabber tab hides and shows tab content */
+.tabbertabhide {
+	display:none;
+}
+
 /* Columns */
 #vanster{float:left;width:25%;}
 #mitt{float:left;width:25%;}
