@@ -57,12 +57,12 @@
 				<li><a href="#">COMMUNITY</a></li>
 				<li><a href="#">CONTACT</a></li>
 			</ul>
-			<div class="login clearfix"> <!-- Vill du ha flera klassen ska du inte ha "" mellan klassnamnen. -->
-				<div class="textwidget"> <!-- Denna div måste finnas med -->
+			
+			<div class="login">
+				<div class="textwidget"><!-- Denna div måste finnas med -->
 					<a href="#">LOGIN</a>
 				</div>
 			</div> <!-- /Login -->
-			<!-- </ul> Denna UL kan inte wrappa LOGIN-diven -->
 		</div> <!-- /menu -->
 	</div> <!-- /header -->
 
@@ -77,28 +77,33 @@
 				<p class="buttontext"><a href="#">BUY LICENSE</p></a>
 			</div>
 		
-			<!-- Rad 81 - 90 är fel -->
+		
 			<div id="offer">
-			<li>
-				<img src="images/offer.png"></a></li>  <!-- Här fattas den svarta texten. se design 2 p-taggar stylas grön och svart, stänga alla image taggar, lägga till alt-text -->
+				<li class="offer1">
+				10% OFF NOW
+				</li>
+			    <li class="offer2">
+				BOOSTING TEXTURE CREATION
+				</li>
 			</div>
 			
 			<div id="productlogo">
-			<li><a class="current" href="#"><img src="images/ddo.png"></a></li>
+			<li><a class="current" href="#"><img src="images/productlogo.png" alt=""></img></a></li>
 			</div>
 			
 			</ul>
 		</div> <!-- /nav -->
-	<!-- </div> /Header --> <!-- Denna måste stängas ovanför Andra menyn
+
 
 	<!-- Slider -->
 	<div class="slider-wrapper">
 		<div id="slider" class="nivoSlider">
-			<a href=""><img src="images/slidertest.jpg" alt="" /></a> <!-- Är detta verkligen allt? Var är länken och bildtexten? lägga till och styla textfält-->
-			<a href=""><img src="images/slidertest2.jpg" alt="" /></a>
-			<a href=""><img src="images/slidertest3.jpg" alt="" /></a>
+			<a href=""><img src="images/slidertest.jpg" alt="" /></img></a> <!-- Är detta verkligen allt? Var är länken och bildtexten? lägga till och styla textfält-->
+			<a href=""><img src="images/slidertest.jpg" alt="" /></img></a>
+			<a href=""><img src="images/slidertest.jpg" alt="" /></img></a>
 		</div>
 	</div>
+	<!-- /Slider -->
 
 	<div id="content" class="clearfix">
 		
@@ -180,17 +185,23 @@
 			<div class="inner2">
 				<h3><a href="">"Great"</a></h3>
 				<p class="author">-Mark Smith</p>
-				<p class="full"><a href="">FULL</a></p>	<!-- Det räcker inte med en H3a här. Det är ett namn till varje testimonial. Se design -->
+				<a class="full" href="">FULL</a>
 			</div>
 			<div class="inner2">
 				<h3><a href="">"Super nice"</a></h3>
 				<p class="author">-Ron Smith</p>
-				<p class="full"><a href="">FULL</a></p>
+				<a class="full" href="">FULL</a>
 			</div>
 			<div class="inner2">
 				<h3><a href="">"Mindblowing"</a></h3>
 				<p class="author">-Bob Smith</p>
-				<p class="full"><a href="">Full</a></p> <!-- Varför har du ett <p> runt <a>? -->
+				<a class="full" href="">FULL</a> <!-- Varför har du ett <p> runt <a>? -->
+			</div>
+			
+			<div class="inner2">
+				<h3><a href="">"Mindblowing"</a></h3>
+				<p class="author">-Rolf Smith</p>
+				<a class="full" href="">FULL</a>
 			</div>
 
 			<!-- Här har du satt bakgrundsbilden på fel objekt -->
@@ -208,9 +219,10 @@
 			<p><a href=""><strong>BUY DDO</strong></a> | <a href=""><strong>BUY NDO</strong></a></p>	
 		</div>
 		<div class="rightfooter">
-			<p><a href="">DDO</a> | <a href="">NDO</a> | <a href="">STORE</a> |
-		 	<a href="">COMMUNITY</a> | <a href="">CONTACT</a> | <a href="">LOGIN</a> |
-		 	<a href="">CROSS-PROMOTION</a> | <a href="">PRESS</a></p>	
+		<p><a href="">DDO</a> | <a href="">NDO</a> | <a href="">STORE</a> |
+		 <a href="">COMMUNITY</a> | <a href="">CONTACT</a> | <a href="">LOGIN</a> |
+		 <a href="">CROSS-PROMOTION</a> | <a href="">PRESS</a>
+		</p>	
 		</div>
 	</div> <!-- /Footer -->
 	
@@ -218,7 +230,7 @@
 		<div class="leftfooter">
 			<p><strong>&copy; 2012 QUIXEL.SE | CORP ID NO: 556859-5407</strong></p>
 		</div>
-		<div class="rightfooter">
+		<div class="rightfooter2">
 			<p><strong>ALL RIGHTS RESERVED</strong></p>
 		</div>
 	</div> <!-- /footer2 -->
