@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="Your description goes here" />
-	<meta name="keywords" content="your,keywords,goes,here" />
-	<meta name="author" content="Your Name" />
-	<link href='' rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" type="text/css" media="all" href="style.css" />
 
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+	<link rel='stylesheet' id='contact-form-7-css'  href='http://quixel.se/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=3.3.1' media='all' />
+
+	<!-- Wordpress js -->
+	<script type='text/javascript' src='http://quixel.se/wp-includes/js/comment-reply.js?ver=3.4.2'></script>
+	<script type='text/javascript' src='http://quixel.se/wp-includes/js/jquery/jquery.js?ver=1.7.2'></script>
+
+	<!-- Nivo Slider -->
 	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+
+	<!-- Shadowbox -->
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/quixel/shadowbox/shadowbox.css">
+	<script type="text/javascript" src="/wp-content/themes/quixel/shadowbox/shadowbox.js"></script>
+	<script type="text/javascript">
+		Shadowbox.init();
+	</script>
+
+	<!-- Tabber.js -->
 	<script type="text/javascript" src="js/tabber.js"></script>
 	<script type="text/javascript">
 
@@ -27,50 +42,29 @@
 <div id="wrapper964" class="clearfix">
 	
 	<!-- Header -->
-	<div id="header" class="clearfix"> <!-- Varför inte HTML5? -->
-		<div id="sitetitle" class="clearfix"> <!-- Var stänger du den diven? -->
-			<div id="header-image" class="clearfix"></div>
-	</div>
-		
-	<!-- Översta menyn 
-
-	OBS!! Menyn MÅSTE stylas enligt classerna nedan. Det är så Wordpress genererar menyn
-
-				<div class="menu">
-					<ul>
-						<li class="">
-							<a href="http://quixel.se/?page_id=130">Basic sida</a>
-						</li>
-						<li class="">
-							<a href="http://quixel.se/?page_id=5">dDo</a>
-						</li>
-						<li class="">
-							<a href="http://quixel.se/?page_id=110">iFrames</a>
-						</li>
-					</ul>
-				</div>
-				<div class="login">
-					<div class="textwidget">
-						<a href="login.php" title="Detta kommer från widgeten">Login (widget)</a>
-					</div>
-				</div>		-->
-	
-			
-	<div class="menu">
-		
-		<ul>
-			<li><a href="#">DDO</a></li>
-			<li><a href="#">NDO</a></li>
-			<li><a href="#">STORE</a></li>
-			<li><a href="#">COMMUNITY</a></li>
-			<li><a href="#">CONTACT</a></li>
-		
-		<div class="login" "clearfix">
-			<a href="#">LOGIN</a>
+	<div id="header" class="clearfix"> 
+		<div id="sitetitle" class="clearfix"> 
+			<div id="header-image" class="clearfix">
+			</div>
 		</div>
-		</ul>
-	</div>
-
+		
+	<!-- Översta menyn -->
+		<div class="menu">
+			<ul>
+				<li><a href="#">DDO</a></li>
+				<li><a href="#">NDO</a></li>
+				<li><a href="#">STORE</a></li>
+				<li><a href="#">COMMUNITY</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+			<div class="login clearfix"> <!-- Vill du ha flera klassen ska du inte ha "" mellan klassnamnen. -->
+				<div class="textwidget"> <!-- Denna div måste finnas med -->
+					<a href="#">LOGIN</a>
+				</div>
+			</div> <!-- /Login -->
+			<!-- </ul> Denna UL kan inte wrappa LOGIN-diven -->
+		</div> <!-- /menu -->
+	</div> <!-- /header -->
 
 	
 	<!-- Andra menyn -->
@@ -83,9 +77,10 @@
 				<p class="buttontext"><a href="#">BUY LICENSE</p></a>
 			</div>
 		
-			
+			<!-- Rad 81 - 90 är fel -->
 			<div id="offer">
-			<li><img src="images/offer.png"></a></li>  <!-- Här fattas den svarta texten. se design 2 p-taggar stylas grön och svart, stänga alla image taggar, lägga till alt-text -->
+			<li>
+				<img src="images/offer.png"></a></li>  <!-- Här fattas den svarta texten. se design 2 p-taggar stylas grön och svart, stänga alla image taggar, lägga till alt-text -->
 			</div>
 			
 			<div id="productlogo">
@@ -93,15 +88,15 @@
 			</div>
 			
 			</ul>
-		</div>
-	</div>
+		</div> <!-- /nav -->
+	<!-- </div> /Header --> <!-- Denna måste stängas ovanför Andra menyn
 
 	<!-- Slider -->
 	<div class="slider-wrapper">
 		<div id="slider" class="nivoSlider">
 			<a href=""><img src="images/slidertest.jpg" alt="" /></a> <!-- Är detta verkligen allt? Var är länken och bildtexten? lägga till och styla textfält-->
-			<a href=""><img src="images/slidertest.jpg" alt="" /></a>
-			<a href=""><img src="images/slidertest.jpg" alt="" /></a>
+			<a href=""><img src="images/slidertest2.jpg" alt="" /></a>
+			<a href=""><img src="images/slidertest3.jpg" alt="" /></a>
 		</div>
 	</div>
 
@@ -121,152 +116,135 @@
 	<!-- Innehållet i Master learning och Tool Specs -->
 	<!-- Title-attributet på diven sätter menyvalets namn --> <!-- Du kan inte ge dessa egna IDn då de skapas dynamiskt och vi inte vet hur många de är.-->
 
-	<div class="tabber"> <!-- JS letar efter "tabber" och "tabbertab" -->
-		<div class="tabbertab" title="Master Learning"> <!-- Här börjar Master learning -->
-			 
+		<div class="tabber"> <!-- JS letar efter "tabber" och "tabbertab" -->
+			<div class="tabbertab" title="Master Learning"> <!-- Här börjar Master learning -->
 				<div class="inner">
 					<h3>Tab1</h3>
 					<p>Bla bla bla</p>
 				</div>
-		
-			
 				<div class="inner">
 					<h3>2222222222222</h3>
 					<p>Hubba hubba hubba</p>
 				</div>
-		
 				<div class="inner">
 					<h3>3333333333333</h3>
 					<p>Hubba hubba hubba</p>
 				</div>
-		
 				<div class="inner">
 					<h3>4444444444444</h3>
 					<p>jada jada jada</p>
 				</div>
-		
-		</div> <!-- här slutar Master learning -->
+			</div> <!-- /Master learning -->
 
-		<div class="tabbertab" title="Tool Specs"> <!-- Här börjar Tools specs -->
-			
-			<div class="inner">
+			<div class="tabbertab" title="Tool Specs"> <!-- Här börjar Tools specs -->
+				<div class="inner">
 					<h3>Tab1</h3>
 					<p>Bla bla bla</p>
 				</div>
-		
-			
 				<div class="inner">
 					<h3>2222222222222</h3>
 					<p>Hubba hubba hubba</p>
 				</div>
-		
 				<div class="inner">
 					<h3>3333333333333</h3>
 					<p>Hubba hubba hubba</p>
 				</div>
-		
 				<div class="inner">
 					<h3>4444444444444</h3>
 					<p>jada jada jada</p>
 				</div>			
-		</div> <!-- här slutar Tool specs -->
+			</div> <!-- /Tool specs -->
 
-		<div class="tabbertab" title="Community Highlights"> <!-- Här börjar Community Highlights -->
-			<div class="inner">
+			<div class="tabbertab" title="Community Highlights"> <!-- Här börjar Community Highlights -->
+				<div class="inner">
 					<h3>Tab1</h3>
 					<p>Bla bla bla</p>
 				</div>
-		
-			
 				<div class="inner">
 					<h3>2222222222222</h3>
 					<p>Hubba hubba hubba</p>
 				</div>
-		
 				<div class="inner">
 					<h3>3333333333333</h3>
 					<p>Hubba hubba hubba</p>
 				</div>
-		
 				<div class="inner">
 					<h3>4444444444444</h3>
 					<p>jada jada jada</p>
 				</div>
-			
-		</div> <!-- här slutar Community Highlights -->
-
-	</div> <!-- här slutar tabber -->
-		<br><br><br><br>
-	
-<!-- Testimonials -->	
-	<div id="testimonials">
+			</div> <!-- /Community Highlights -->
+		</div> <!-- /Tabber -->
 		
-		<!-- Du kan inta sätta specifika IDn här för dessa skapas dynamiskt -->
+		<!-- Testimonials -->	
+		<div id="testimonials">
 			<div class="inner2">
 				<h3><a href="">"Great"</a></h3>
 				<p class="author">-Mark Smith</p>
 				<p class="full"><a href="">FULL</a></p>	<!-- Det räcker inte med en H3a här. Det är ett namn till varje testimonial. Se design -->
-			<!-- Dessa ska vara klickbara också -->
-		</div>
-
-		
+			</div>
 			<div class="inner2">
 				<h3><a href="">"Super nice"</a></h3>
 				<p class="author">-Ron Smith</p>
 				<p class="full"><a href="">FULL</a></p>
-			
-		</div>
-		
-		
+			</div>
 			<div class="inner2">
 				<h3><a href="">"Mindblowing"</a></h3>
 				<p class="author">-Bob Smith</p>
-				<p class="full"><a href="">FULL</a></p>
-		
-		</div>
+				<p class="full"><a href="">Full</a></p> <!-- Varför har du ett <p> runt <a>? -->
+			</div>
 
-		
-			<div class="inner2">
+			<!-- Här har du satt bakgrundsbilden på fel objekt -->
+			<!--<div class="inner2">
 				<h3><a href="">"Sucks"</a></h3>
 				<p class="author">-Joe Smith</p>
 				<p class="full"><a href="">FULL</a></p>
-		
-		</div>
-		
-	</div>
-		
-		
+			</div> -->
+		</div> <!-- /Testimonials -->
+	</div> <!-- /Content -->  <!-- Content måste sluta innan sidfoten -->
+
 	<!-- Sidfot -->
 	<div id="footer">
 		<div class="leftfooter">
-		<p><a href=""><strong>BUY DDO</strong></a> | <a href=""><strong>BUY NDO</strong></a>
-		</p>	
+			<p><a href=""><strong>BUY DDO</strong></a> | <a href=""><strong>BUY NDO</strong></a></p>	
 		</div>
 		<div class="rightfooter">
-		<p><a href="">DDO</a> | <a href="">NDO</a> | <a href="">STORE</a> |
-		 <a href="">COMMUNITY</a> | <a href="">CONTACT</a> | <a href="">LOGIN</a> |
-		 <a href="">CROSS-PROMOTION</a> | <a href="">PRESS</a>
-		</p>	
+			<p><a href="">DDO</a> | <a href="">NDO</a> | <a href="">STORE</a> |
+		 	<a href="">COMMUNITY</a> | <a href="">CONTACT</a> | <a href="">LOGIN</a> |
+		 	<a href="">CROSS-PROMOTION</a> | <a href="">PRESS</a></p>	
 		</div>
-	</div>
+	</div> <!-- /Footer -->
 	
 	<div id="footer2">
-	<div class="leftfooter">
+		<div class="leftfooter">
 			<p><strong>&copy; 2012 QUIXEL.SE | CORP ID NO: 556859-5407</strong></p>
-	</div>
-	<div class="rightfooter">
+		</div>
+		<div class="rightfooter">
 			<p><strong>ALL RIGHTS RESERVED</strong></p>
-	</div>
-	</div>
-	<!-- Slut på Sidfot -->
-	
-</div><!-- Här slutar content -->
+		</div>
+	</div> <!-- /footer2 -->
+	<!-- Slut på Sidfot -->	
+</div><!-- /Wrapper964 -->
+
+	<!-- Wordpress javascript -->
+
+	<!-- Optimised Asynchronous Google Analytics --><script>var _gaq=[['_setAccount','UA-XXXXXXXX-X'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));</script><!-- Protocol Relative jQuery fall back if Google CDN offline --><script>window.jQuery || document.write('<script src='http://quixel.se/wp-content/themes/quixel/js/jquery-1.8.2.min.js'><\/script>')</script><script type='text/javascript' src='http://quixel.se/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.18'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/quixel.se\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Skickar..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://quixel.se/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=3.3.1'></script>
+
+
 
 	<!-- Nivo Slider script -->
-<script type="text/javascript">
-	$(window).load(function() {
-		$('#slider').nivoSlider();
-	});
-</script>
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('#slider').nivoSlider();
+		});
+	</script>
 </body>
 </html>
