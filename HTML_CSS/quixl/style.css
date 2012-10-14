@@ -87,10 +87,10 @@ font-size:12px; color:#FFF; text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
 .inner{float:left; margin:22px 17px 17px 17px; text-align:center; height:231px; width:205px; background:#292929;}
 
 /* Testimonials */
-#testimonials{clear:both;font-family:Verdana,Tahoma,sans-serif;text-align:left; height:86px; width:964px; padding-top:20px;}
+#testimonials{clear:both;font-family:Verdana,Tahoma,sans-serif;text-align:left; height:86px; width:964px; padding-top:20px;  background:#fff url(images/testimonials.jpg);}
 /*#testimonial{float:left;width:25%; height:86px; background:#fff url(images/testimonials.jpg);}*/
 
-.inner2{margin:0px 0px 0px 0px; float:left; width:25%; text-align:center; height:86px; background:#fff url(images/testimonials.jpg);}
+.inner2{margin:0px 0px 0px 0px; float:left; width:25%; text-align:center; height:86px;}
 .inner2 a{color:#4480c3;}
 
 /* Bildboxar */
