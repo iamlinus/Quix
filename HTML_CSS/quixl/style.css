@@ -1,7 +1,7 @@
 /* HTML elements */
 body{background:#181818 url(images/bild.jpg) top left;color:#555;font-family:'Lato',Tahoma,Arial,sans-serif;font-size:13px;line-height:1.5em;}
-a{color:#696c3d;text-decoration:none;}
-a:hover{color:#555;text-decoration:none;}
+a{color:#FFF;text-decoration:none;}
+a:hover{color:#FFF;text-decoration:none;}
 a img{border:none;}
 h1,h2,h3,h4{clear:left;color:#fff;font-weight:400;margin:0.7em 0;font-family:'Gentium Basic';}
 h1{font-size:2.4em;}
@@ -19,7 +19,7 @@ p,ul{margin:0 0 20px 0;}
 #sitetitle{float:left;margin:10px 0 0px 10px; background:#fff url(images/logga.jpg); width:207px; height:72px; position:relative; z-index: 4;}
 #sitetitle h1 {font-size:36px;color:#fff;margin:0;padding:0;}
 #header-image{height:207px;margin:0;padding:0;}
-#content{padding:0px 0px;background-color:#FFF;}
+#content{padding:0px 0px 20px 0px;background-color:#FFF;}
 #content h2,#content h3,#content h4{color:#FFF;}
 #content a{color:#fff;text-decoration:none;}
 
@@ -36,23 +36,25 @@ p,ul{margin:0 0 20px 0;}
 .menu{padding:0 0px; height:90px; position:relative; margin-bottom:0px;}
 .menu ul{list-style:none;margin:0;text-align:center; position:relative; z-index: 4;}
 .menu ul li{display:inline-block;font-size:12px;margin:65px 0 8px 25px;}
-.menu ul li a{color:#dadddd;text-shadow: 3px 1px 2px rgba(150, 150, 150, 1);}
+.menu ul li a{color:#dadddd;text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
 .menu ul li a:hover{color:#fff;text-decoration:none;}
 
-.login{padding:0 15px; height:90px; float:right;}
-.login ul{list-style:none;margin:0;text-align:right;}
-.login ul li{display:inline-block;font-size:12px;margin:65px 0 8px 39px;}
+.login{position:relative; width:57px; height:20px; float:right; text-align:right; margin-right:8px; margin-top:66px; background:#181818 url(images/login2.png) no-repeat;
+font-size:12px; color:#FFF; text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
+.login ul{list-style:none;margin:0;}
+.login ul li{font-size:12px;margin:0px 0 0px 0px;}
 .login ul li a{color:#dadddd;text-shadow: 3px 1px 2px rgba(150, 150, 150, 1);}
 .login ul li a:hover{color:#fff;text-decoration:none;}
 
 /* Navigation menu */
-#nav{font-family:Verdana,Tahoma,sans-serif;text-align:center; background:#292929 url(images/navbackground.jpg);}
+#nav{height:102px; font-family:Verdana,Tahoma,sans-serif;text-align:center; background:#292929 url(images/navbackground.jpg);}
 #nav ul{float:left; list-style:none;margin:10px 10px 26px -22px;}
 #nav ul li{display:inline-block;text-align:right;height:auto;line-height:25px;margin-bottom:0;margin-left:-8px;position:relative;}
+.navbuttons {float:left; width:209px; height:83px; margin:10px -12px 0px 10px; font-family:Verdana,Tahoma,sans-serif;text-align:center; background:#292929 url(images/menybutton.png);}
+.buttontext {position:relative; font-size:20px; color:#FFF; text-align:center; margin-top:30px; text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
 
-
-#productlogo{float:right; width:255px; height:136px; position:absolute; top:54px; left:690px; z-index: 3;}
-#offer{float:left; background:none; width:266px; height:85px; position:absolute; top:92px; left:434px;}
+#productlogo{float:right; width:255px; height:136px; position:absolute; top:38px; left:687px; z-index: 3;}
+#offer{float:left; background:none; width:266px; height:85px; position:absolute; top:71px; left:434px;}
 
 /* Lower navigation menu */
 #lownav{clear:both;font-family:Verdana,Tahoma,sans-serif;text-align:left; background:#fff url(images/lownav.jpg); height:37px; width:964px;}
@@ -63,9 +65,9 @@ p,ul{margin:0 0 20px 0;}
 #lownav ul li a.current{color:#FFF;}
 
 /* Lower navigation menu. Class ist för ID pga tabber.js ANVÄND DENNA ISTÄLLET*/
-.lownav{list-style:none;margin:0; clear:both;font-family:Verdana,Tahoma,sans-serif;text-align:left; background:#fff url(images/lownav.jpg); height:37px; width:924px;}
-.lownav li{background:none;display:inline-block;text-align:left;height:auto;line-height:25px;padding-left:30px;margin-bottom:-20px;margin-top:5px;margin-left:0px;position:relative;}
-.lownav li a{color:#CCC !important;display:block;font-size:20px;padding-top:1px; margin-left:30px; text-transform:uppercase; text-decoration:none; text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
+.lownav{list-style:none;margin:0; clear:both;font-family:Verdana,Tahoma,sans-serif;text-align:left; background:#fff url(images/lownav.jpg); height:37px; width:924px; text-align:center;}
+.lownav li{background:none;display:inline-block;text-align:left;height:auto;line-height:25px;padding-left:0px;margin-bottom:-20px;margin-top:5px;margin-left:10px; margin-right:-33px; position:relative;}
+.lownav li a{color:#CCC !important;display:block;font-size:20px;padding-top:1px; padding-right:100px; text-align:right; text-transform:uppercase; text-decoration:none; text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
 .lownav li a:hover{color:#FFF;}
 .lownav li a.current{color:#FFF;}
 
@@ -79,13 +81,14 @@ p,ul{margin:0 0 20px 0;}
 #mitt{float:left;width:25%;}
 #mitt2{float:left;width:25%;}
 #hoger{float:right;width:25%;}
-.inner{margin:15px 45px 50px;}
+.inner{float:left; margin:22px 17px 17px 17px; text-align:center; height:231px; width:205px; background:#292929;}
 
 /* Testimonials */
 #testimonials{clear:both;font-family:Verdana,Tahoma,sans-serif;text-align:left; height:86px; width:964px; padding-top:20px;}
-#testimonial{float:left;width:25%; height:86px; background:#fff url(images/testimonials.jpg);}
+/*#testimonial{float:left;width:25%; height:86px; background:#fff url(images/testimonials.jpg);}*/
 
-.inner2{margin:19px 0px 0px 45px;}
+.inner2{margin:0px 0px 0px 0px; float:left; width:25%; text-align:center; height:86px; background:#fff url(images/testimonials.jpg);}
+.inner2 a{color:#4480c3;}
 
 /* Bildboxar */
 #leftbox{float:left;width:450px; height:300px; padding:5px; margin-left:15px; margin-top:50px; border: 1px solid black; background:#222 url(images/bild.jpg);}
@@ -110,8 +113,8 @@ p,ul{margin:0 0 20px 0;}
 .right{float:right;}
 .rightfooter{float:right;}
 .leftfooter{float:left;}
-.author {float:left; font-size:14px; color:#FFF;}
-.full {float:left; margin-left:25px; margin-top:1px; Font-size:12px; color:#4480c3; text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
+.author {float:left; font-size:14px; color:#FFF; margin-left:50px;}
+.full {float:left; margin-left:25px; margin-top:0px; Font-size:12px; color:#4480c3; text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
 
 
 .boxshadow{box-shadow: 5px 5px #171717;
@@ -153,7 +156,7 @@ filter: progid:DXImageTransform.Microsoft.dropShadow(color=#171717, offX=5, offY
 .nivo-controlNav a.active{font-weight:700;}
 
 /*Nivo Slider styling*/
-.slider-wrapper .nivoSlider{position:absolute;height:300px;top:-25px;right:19%;background:#1a1a1a url(images/loading.gif) no-repeat 50% 50%;margin-bottom:-26px;}
+.slider-wrapper .nivoSlider{position:absolute;height:300px;top:0px;right:19%;background:#1a1a1a url(images/loading.gif) no-repeat 50% 50%;margin-bottom:0px;}
 .slider-wrapper .nivoSlider img{position:absolute;top:0px;left:0;display:none;}
 .slider-wrapper .nivoSlider a{border:0;display:block;}
 .slider-wrapper .nivo-controlNav{position:absolute;left:80%;bottom:0px;margin-left:-60px;/* Tweak this to center bullets */}

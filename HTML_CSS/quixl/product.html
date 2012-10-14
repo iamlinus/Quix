@@ -65,8 +65,8 @@
 			<li><a href="#">COMMUNITY</a></li>
 			<li><a href="#">CONTACT</a></li>
 		
-		<div class="login">
-			<li><a href="#">LOGIN</a></li>
+		<div class="login" "clearfix">
+			<a href="#">LOGIN</a>
 		</div>
 		</ul>
 	</div>
@@ -75,10 +75,14 @@
 	
 	<!-- Andra menyn -->
 		<div id="nav" class="clearfix">
-			<ul>
-				<li><a href="#"><img src="images/trydemo.png"> </a> </li>
-				<li><a href="#"><img src="images/buylicense.png"></a></li>
-				
+			<div class="navbuttons">
+			
+				<p class="buttontext"><a href="#">TRY DEMO</p></a>
+			</div>
+			<div class="navbuttons">
+				<p class="buttontext"><a href="#">BUY LICENSE</p></a>
+			</div>
+		
 			
 			<div id="offer">
 			<li><img src="images/offer.png"></a></li>  <!-- Här fattas den svarta texten. se design 2 p-taggar stylas grön och svart, stänga alla image taggar, lägga till alt-text -->
@@ -95,9 +99,9 @@
 	<!-- Slider -->
 	<div class="slider-wrapper">
 		<div id="slider" class="nivoSlider">
-			<img src="images/slidertest.jpg" alt="" /> <!-- Är detta verkligen allt? Var är länken och bildtexten? lägga till och styla textfält-->
-			<img src="images/slidertest.jpg" alt="" />
-			<img src="images/slidertest.jpg" alt="" />
+			<a href=""><img src="images/slidertest.jpg" alt="" /></a> <!-- Är detta verkligen allt? Var är länken och bildtexten? lägga till och styla textfält-->
+			<a href=""><img src="images/slidertest.jpg" alt="" /></a>
+			<a href=""><img src="images/slidertest.jpg" alt="" /></a>
 		</div>
 	</div>
 
@@ -115,69 +119,80 @@
 
 
 	<!-- Innehållet i Master learning och Tool Specs -->
-	<!-- Title-attributet på diven sätter menyvalets namn -->
+	<!-- Title-attributet på diven sätter menyvalets namn --> <!-- Du kan inte ge dessa egna IDn då de skapas dynamiskt och vi inte vet hur många de är.-->
 
 	<div class="tabber"> <!-- JS letar efter "tabber" och "tabbertab" -->
 		<div class="tabbertab" title="Master Learning"> <!-- Här börjar Master learning -->
-			<div class="vanster">  <!-- Du kan inte ge dessa egna IDn då de skapas dynamiskt och vi inte vet hur många de är. -->
+			 
 				<div class="inner">
 					<h3>Tab1</h3>
 					<p>Bla bla bla</p>
 				</div>
-			</div>
-			<div id="mitt">
+		
+			
 				<div class="inner">
 					<h3>2222222222222</h3>
 					<p>Hubba hubba hubba</p>
 				</div>
-			</div>
-			<div id="mitt2">
+		
 				<div class="inner">
 					<h3>3333333333333</h3>
 					<p>Hubba hubba hubba</p>
 				</div>
-			</div>
-			<div id="hoger">
+		
 				<div class="inner">
 					<h3>4444444444444</h3>
 					<p>jada jada jada</p>
 				</div>
-			</div>
+		
 		</div> <!-- här slutar Master learning -->
 
 		<div class="tabbertab" title="Tool Specs"> <!-- Här börjar Tools specs -->
-			<h3>Tab2</h3>
-			<p>Bla bla bla</p>				
-		</div> <!-- här slutar Tool specs -->
-
-		<div class="tabbertab" title="Community Highlights"> <!-- Här börjar Community Highlights -->
-			<div id="vanster">
-				<div class="inner">
-					<h3>Tab3</h3>
+			
+			<div class="inner">
+					<h3>Tab1</h3>
 					<p>Bla bla bla</p>
 				</div>
-			</div>
-
-			<div id="mitt">
+		
+			
 				<div class="inner">
 					<h3>2222222222222</h3>
 					<p>Hubba hubba hubba</p>
 				</div>
-			</div>
-			
-			<div id="mitt2">
+		
 				<div class="inner">
 					<h3>3333333333333</h3>
 					<p>Hubba hubba hubba</p>
 				</div>
-			</div>
+		
+				<div class="inner">
+					<h3>4444444444444</h3>
+					<p>jada jada jada</p>
+				</div>			
+		</div> <!-- här slutar Tool specs -->
 
-			<div id="hoger">
+		<div class="tabbertab" title="Community Highlights"> <!-- Här börjar Community Highlights -->
+			<div class="inner">
+					<h3>Tab1</h3>
+					<p>Bla bla bla</p>
+				</div>
+		
+			
+				<div class="inner">
+					<h3>2222222222222</h3>
+					<p>Hubba hubba hubba</p>
+				</div>
+		
+				<div class="inner">
+					<h3>3333333333333</h3>
+					<p>Hubba hubba hubba</p>
+				</div>
+		
 				<div class="inner">
 					<h3>4444444444444</h3>
 					<p>jada jada jada</p>
 				</div>
-			</div>
+			
 		</div> <!-- här slutar Community Highlights -->
 
 	</div> <!-- här slutar tabber -->
@@ -186,36 +201,36 @@
 <!-- Testimonials -->	
 	<div id="testimonials">
 		
-		<div id="testimonial"> <!-- Du kan inta sätta specifika IDn här för dessa skapas dynamiskt -->
+		<!-- Du kan inta sätta specifika IDn här för dessa skapas dynamiskt -->
 			<div class="inner2">
 				<h3><a href="">"Great"</a></h3>
 				<p class="author">-Mark Smith</p>
 				<p class="full"><a href="">FULL</a></p>	<!-- Det räcker inte med en H3a här. Det är ett namn till varje testimonial. Se design -->
-			</div>	<!-- Dessa ska vara klickbara också -->
+			<!-- Dessa ska vara klickbara också -->
 		</div>
 
-		<div id="testimonial">
+		
 			<div class="inner2">
 				<h3><a href="">"Super nice"</a></h3>
-				<p class="author">-Mark Smith</p>
+				<p class="author">-Ron Smith</p>
 				<p class="full"><a href="">FULL</a></p>
-			</div>
+			
 		</div>
 		
-		<div id="testimonial">
+		
 			<div class="inner2">
 				<h3><a href="">"Mindblowing"</a></h3>
-				<p class="author">-Mark Smith</p>
+				<p class="author">-Bob Smith</p>
 				<p class="full"><a href="">FULL</a></p>
-			</div>
+		
 		</div>
 
-		<div id="testimonial">
+		
 			<div class="inner2">
 				<h3><a href="">"Sucks"</a></h3>
-				<p class="author">-Mark Smith</p>
+				<p class="author">-Joe Smith</p>
 				<p class="full"><a href="">FULL</a></p>
-			</div>
+		
 		</div>
 		
 	</div>
