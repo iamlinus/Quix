@@ -1,12 +1,9 @@
 /* HTML elements */
 body{background:#181818 url(images/bild.jpg) top left;color:#555;font-family:'Lato',Tahoma,Arial,sans-serif;font-size:13px;line-height:1.5em;}
-a{color:#FFF;text-decoration:none;}
-a:hover{color:#FFF;text-decoration:none;}
-a img{border:none;}
 h1,h2,h3,h4{clear:left;color:#fff;font-weight:400;margin:0.7em 0;font-family:'Gentium Basic';}
 h1{font-size:2.4em;}
 h2{font-size:2.1em;}
-h3{font-size:1.6em;}
+h3{font-size:1.8em; color:#FFF;}
 p,ul{margin:0 0 20px 0;}
 
 /* Wrapper */
@@ -21,7 +18,6 @@ p,ul{margin:0 0 20px 0;}
 #header-image{height:207px;margin:0;padding:0;}
 #content{padding:0px 0px 20px 0px;background-color:#FFF;}
 #content h2,#content h3,#content h4{color:#FFF;}
-#content a{color:#fff;text-decoration:none;}
 
 /* Startsida innehåll */ 
 #startcontent{padding:20px 0px 20px 0px;background-color:#181818; height:auto;}
@@ -33,65 +29,55 @@ p,ul{margin:0 0 20px 0;}
 .menu, #content, #footer{background:none;background-color:#181818;}
 
 /* menu */
-.menu{padding:0 30px 0 0px; height:90px; position:relative; margin-bottom:0px;}
+.menu{padding:0 60px 0 0px; height:90px; position:relative; margin-right:0px;}
 .menu ul{list-style:none; margin:0; text-align:center; position:relative; z-index: 4;}
-.menu ul li{display:inline-block;font-size:12px;margin:65px 0px 8px 25px;}
-.menu ul li a{color:#dadddd;text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
-.menu ul li a:hover{color:#fff;text-decoration:none;}
+.menu ul li{display:inline-block;font-size:12px;margin:65px 5px 8px 25px;}
+.menu ul li a{color:#FFF; text-decoration:none; text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
+.menu ul li a:hover{color:#FFF;text-decoration:none;}
 
-.login{position:relative; width:57px; height:20px; float:right; text-align:right; margin-right:-22px; margin-top:-26px; background:#181818 url(images/login2.png) no-repeat;
+.login{position:relative; width:57px; height:20px; float:right; text-align:right; margin-right:-50px; margin-top:-26px; background:#181818 url(images/login.png) no-repeat;
 font-size:12px; color:#FFF; text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
 .login ul{list-style:none;margin:0;}
 .login ul li{font-size:12px;margin:0px 0 0px 0px;}
-.login ul li a{color:#dadddd;text-shadow: 3px 1px 2px rgba(150, 150, 150, 1);}
-.login ul li a:hover{color:#fff;text-decoration:none;}
+.login a{text-decoration:none; color:#FFF;text-shadow: text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
+.login a:hover{color:#FFF;text-decoration:none;}
 
 /* Navigation menu */
 #nav{height:102px; font-family:Verdana,Tahoma,sans-serif;text-align:center; background:#292929 url(images/navbackground.jpg);}
 #nav ul{float:left; list-style:none;margin:10px 10px 26px -22px;}
 #nav ul li{display:inline-block;text-align:right;height:auto;line-height:25px;margin-bottom:0;margin-left:-8px;position:relative;}
+#nav a{text-decoration:none; color:#FFF;text-shadow: text-shadow: 2px 2px 1px rgba(0, 0, 0, 1); text-transform:uppercase;}
+#nav a:hover{color:#FFF;text-decoration:none;}
 .navbuttons {float:left; width:209px; height:83px; margin:10px -12px 0px 10px; font-family:Verdana,Tahoma,sans-serif;text-align:center; background:#292929 url(images/menybutton.png);}
 .buttontext {position:relative; font-size:20px; color:#FFF; text-align:center; margin-top:30px; text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
 
-#productlogo{float:right; width:255px; height:136px; position:relative; top:-53px; left:-20px; z-index: 3;}
+#productlogo{float:right; width:255px; height:136px; position:relative; top:-34px; left:-20px; z-index: 3;}
 
-#offer{float:left; background:none; width:266px; height:85px; position:relative; top:20px; left:13px;  list-style:none}
+#offer{float:left; background:none; width:266px; height:85px; position:relative; top:5px; left:13px;  list-style:none}
 .offer1{font-family:Verdana,Tahoma,sans-serif; font-size:18px; text-align:center; color:#13ff1f; text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
-.offer2{font-family:Verdana,Tahoma,sans-serif; font-size:14px; text-align:center; margin-top:5px; color:#000; text-shadow: 2px 2px 1px rgba(90, 90, 90, 1);}
-
-/* Lower navigation menu */
-#lownav{clear:both;font-family:Verdana,Tahoma,sans-serif;text-align:left; background:#fff url(images/lownav.jpg); height:37px; width:964px;}
-#lownav ul{list-style:none;margin:12px 100px 26px 20px;}
-#lownav ul li{background:none;display:inline-block;text-align:left;height:auto;line-height:25px;padding-left:30px;margin-bottom:-20px;margin-top:5px;margin-left:0px;position:relative;}
-#lownav ul li a{color:#CCC;display:block;font-size:20px;padding-top:1px; margin-left:30px; text-transform:uppercase; text-decoration:none; text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
-#lownav ul li a:hover{color:#FFF;}
-#lownav ul li a.current{color:#FFF;}
+.offer2{font-family:Verdana,Tahoma,sans-serif; font-size:14px; text-align:center; margin-top:3px; color:#000; text-shadow: 2px 2px 1px rgba(90, 90, 90, 1);}
 
 /* Lower navigation menu. Class ist för ID pga tabber.js ANVÄND DENNA ISTÄLLET*/
-.lownav{list-style:none;margin:0; clear:both;font-family:Verdana,Tahoma,sans-serif;text-align:left; background:#fff url(images/lownav.jpg); height:37px; width:924px; text-align:center;}
+.lownav{list-style:none;margin:-1px; clear:both;font-family:Verdana,Tahoma,sans-serif;text-align:left; background:#fff url(images/lownav.jpg); height:37px; width:924px; text-align:center;}
 .lownav li{background:none;display:inline-block;text-align:left;height:auto;line-height:25px;padding-left:0px;margin-bottom:-20px;margin-top:5px;margin-left:10px; margin-right:-33px; position:relative;}
 .lownav li a{color:#CCC !important;display:block;font-size:20px;padding-top:1px; padding-right:100px; text-align:right; text-transform:uppercase; text-decoration:none; text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
 .lownav li a:hover{color:#FFF;}
-.lownav li a.current{color:#FFF;}
+.lownav li a.active{color:#FFF;}
 
 /* Tabber tab hides and shows tab content */
 .tabbertabhide {
 	display:none;
 }
-
-/* Columns */
-#vanster{float:left;width:25%;}
-#mitt{float:left;width:25%;}
-#mitt2{float:left;width:25%;}
-#hoger{float:right;width:25%;}
-.inner{float:left; margin:22px 17px 17px 17px; text-align:center; height:231px; width:205px; background:#292929;}
+/* tabber tab innehåll */
+.inner{float:left; margin:20px 17px 17px 17px; text-align:center; height:231px; width:205px; background:#292929;}
 
 /* Testimonials */
-#testimonials{clear:both;font-family:Verdana,Tahoma,sans-serif;text-align:left; height:86px; width:964px; padding-top:20px;  background:#fff url(images/testimonials.jpg);}
-/*#testimonial{float:left;width:25%; height:86px; background:#fff url(images/testimonials.jpg);}*/
-
-.inner2{margin:0px 0px 0px 0px; float:left; width:25%; text-align:center; height:86px;}
-.inner2 a{color:#4480c3;}
+#testimonials{clear:both;font-family:Verdana,Tahoma,sans-serif;text-align:left; height:85px; width:964px; border: 1px solid black; background:#fff url(images/testimonials.jpg);}
+.inner2{margin:0px 0px 0px 0px; float:left; width:25%; text-align:center; text-transform:uppercase; height:86px;}
+.inner2 h3 a{text-shadow: 2px 2px 1px rgba(0, 0, 0, 1); color:#FFF; text-decoration:none;}
+.author {float:left; font-size:14px; margin-left:50px; color:#FFF; text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
+.full {float:left; margin-left:25px; margin-top:0px; Font-size:12px; font-style:italic; color:#4685cb;  text-decoration:underline; text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
+.full a{float:left; margin-left:25px; margin-top:0px; Font-size:12px; color:#4685cb; text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
 
 /* Bildboxar */
 #leftbox{float:left;width:450px; height:300px; padding:5px; margin-left:15px; margin-top:50px; border: 1px solid black; background:#222 url(images/bild.jpg);}
@@ -99,36 +85,30 @@ font-size:12px; color:#FFF; text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
 
 
 /* Footer */
-#footer{clear:both;background:none;background-color:#404040; height:31px; width:964px; margin-top:-5px; padding-bottom:4px; border-top: 1px solid black;}
-#footer p{color:#000;font-size:12px;margin-bottom:0px;margin-left:10px; margin-right:10px; padding:8px 3px;text-align:left; text-shadow: 1px 1px 1px rgba(90, 90, 90, 1);}
-#footer a{color:#000;}
-#footer a:hover{color:#CCC;}
+#footer{clear:both; background-color:#404040; height:31px; width:964px; margin-top:-5px; padding-bottom:4px; border-top: 1px solid black; text-transform:uppercase;}
+#footer p{color:#000; font-size:12px; font-weight:800; margin-bottom:0px; margin-left:10px; margin-right:10px; padding:8px 3px; text-align:left; text-shadow: 1px 1px 1px rgba(90, 90, 90, 1);}
+#footer a{color:#000; text-decoration:none;}
+#footer a:hover{color:#CCC; text-decoration:none;}
 
-#footer2{clear:both;background:none;background-color:#404040; height:31px; width:964px; margin-bottom:-26px; border-bottom: 1px solid black; border-top:1px solid black}
+#footer2{clear:both;background:none;background-color:#404040; height:31px; width:964px; margin-bottom:0px; border-bottom: 1px solid black; border-top:1px solid black}
 #footer2 p{color:#000;font-size:12px;margin-top:2px; margin-bottom:-60px; padding:5px 0px; margin-left:10px; margin-right:10px; text-align:none; text-shadow: 1px 1px 1px rgba(90, 90, 90, 1);}
-#footer2 a{color:#000;}
-#footer2 a:hover{color:#CCC;}
+#footer2 a{color:#000; text-decoration:none;}
+#footer2 a:hover{color:#CCC; text-decoration:none;}
 
-/* Additional classes */
-.shadow{background:url(images/shadow.png) top center no-repeat;}
-.clear{clear:both;}
-.left{float:left;}
-.right{float:right;}
 .rightfooter{float:right;}
 .rightfooter a{font-size:10px; font-style:bold;}
 .rightfooter2{float:right;}
 .leftfooter{float:left;}
-.author {float:left; font-size:14px; color:#FFF; margin-left:50px;}
-.full {float:left; margin-left:25px; margin-top:0px; Font-size:12px; color:#4480c3; text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);}
 
-
+/* Additional classes */
+.clear{clear:both;}
+.left{float:left;}
+.right{float:right;}
 .boxshadow{box-shadow: 5px 5px #171717;
 -webkit-box-shadow: 5px 5px #171717;
 -moz-box-shadow: 5px 5px #171717;
 filter: progid:DXImageTransform.Microsoft.dropShadow(color=#171717, offX=5, offY=5, positive=true);
 }
-
-
 
 /* Fixar Float */
 .clearfix:after{clear:both;content:".";display:block;height:0;visibility:hidden;}
@@ -161,15 +141,15 @@ filter: progid:DXImageTransform.Microsoft.dropShadow(color=#171717, offX=5, offY
 .nivo-controlNav a.active{font-weight:700;}
 
 /*Nivo Slider styling*/
-.slider-wrapper .nivoSlider{position:absolute;height:300px;top:0px;right:19%;background:#1a1a1a url(images/loading.gif) no-repeat 50% 50%;margin-bottom:0px;}
+.slider-wrapper .nivoSlider{position:absolute;height:300px;top:-2px;right:19%;background:#1a1a1a url(images/loading.gif) no-repeat 50% 50%;margin-bottom:0px;}
 .slider-wrapper .nivoSlider img{position:absolute;top:0px;left:0;display:none;}
 .slider-wrapper .nivoSlider a{border:0;display:block;}
-.slider-wrapper .nivo-controlNav{position:absolute;left:80%;bottom:0px;margin-left:-60px;/* Tweak this to center bullets */}
-.slider-wrapper .nivo-controlNav a{display:block;width:22px;height:22px;background:url(images/bullets.png) no-repeat;text-indent:-9999px;border:0;margin-right:3px;float:left;}
-.slider-wrapper .nivo-controlNav a.active{background-position:0 -22px;}
-.slider-wrapper .nivo-directionNav a{display:block;width:30px;height:30px;background:url(images/arrows.png) no-repeat;text-indent:-9999px;border:0;}
-.slider-wrapper a.nivo-nextNav{background-position:-30px 0;right:15px;}
+.slider-wrapper .nivo-controlNav{position:absolute;left:72%;bottom:0px;margin-left:0px;/* Tweak this to center bullets */}
+.slider-wrapper .nivo-controlNav a{display:block;width:22px;height:35px;background:url(images/bullets4.png) no-repeat;text-indent:-9999px;border:0;margin-right:3px;float:left;}
+.slider-wrapper .nivo-controlNav a.active{background-position:0 -31px;}
+.slider-wrapper .nivo-directionNav a{display:block;width:50px;height:40px;background:url(images/arrows2.png) no-repeat;text-indent:-9999px;border:0;}
+.slider-wrapper a.nivo-nextNav{background-position:-50px 0;right:15px;}
 .slider-wrapper a.nivo-prevNav{left:15px;}
-.slider-wrapper .nivo-caption{font-family:'Lato',Helvetica,Arial,sans-serif;background:rgba(0, 0, 0, 0.2);text-align:center;text-shadow:0 0 4px #111;}
+.slider-wrapper .nivo-caption{position:absolute; float:right; height:70px; width:300px; font-family:'Lato',Helvetica,Arial,sans-serif; font-size:14px; font-weight:800; background:rgba(0, 0, 0, 0.2);text-align:left; margin-bottom:330px; margin-left:848px; text-shadow:0 0 4px #111; text-transform:uppercase;}
 .slider-wrapper .nivo-caption a{color:#fff;border-bottom:1px dotted #fff;}
 .slider-wrapper .nivo-caption a:hover{color:#fff;}
