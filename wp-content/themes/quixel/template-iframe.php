@@ -36,12 +36,10 @@
 <div class="wrapper">
 <!-- Det ovan är istället för get_header -->
 	<!-- Section -->
-	<section>
+<div id="contentiframe">
 		<h1><?php the_title(); ?></h1>
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<?php the_content(); ?>
-			</article> <!-- /Article -->
 		<?php endwhile; ?>
 		<?php else: ?>
 		<!-- Article -->
@@ -49,7 +47,7 @@
 			<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
 		</article><!-- /Article -->
 		<?php endif; ?>
-	</section><!-- /Section -->
+	</div><!-- /contentiframe -->
 </div><!-- /Wrapper -->
 	
 <!-- Det nedan är istället för get_footer -->

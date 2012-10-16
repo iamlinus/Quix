@@ -49,7 +49,7 @@ Custom functions, support, custom post types and more.
    // Load Custom Theme Scripts using Enqueue
    function html5blank_scripts() {
 
-		if(!is_admin()){
+		/*if(!is_admin()){
    
    		wp_deregister_script( 'jquery' ); // Deregister WordPress jQuery
 		wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', 'jquery', '1.8.2'); // Load Google CDN jQuery
@@ -61,7 +61,7 @@ Custom functions, support, custom post types and more.
 		wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', 'jquery', '1.0.0'); // HTML5 Blank script with version number
 		wp_enqueue_script('html5blankscripts'); // Enqueue it!
 		
-		}
+		}*/
 	}
 	
 	// Loading Conditional Scripts

@@ -1,13 +1,17 @@
 	<!-- Footer -->
 	<div id="footer">
-		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('footerupper')) ?>
-		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('footerlower')) ?>
-	</dic id="footer">
-	<!-- /Footer -->
+		<div id="footer1">
+			<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('footerupper')) ?>
+		</div> <!-- /footer1 -->
+		<div id="footer2">
+			<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('footerlower')) ?>
+		</div> <!-- /footer2 -->
+	</div><!-- /footer -->	
+</div> <!-- /Wrapper964 -->
 	
-	</div>
-	<!-- /Wrapper -->
-	
+
+
+
 	<?php wp_footer(); ?>
 
 

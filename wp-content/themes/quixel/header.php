@@ -39,39 +39,18 @@
 	</script>
 
 </head>
-<body id="wrapper964" <?php body_class(); ?>>
-
-	<!-- Gamla HTMLn -->
-	<!-- Header
-	<header> -->
-		<!-- Wrapper
-		<div class="wrapper"> -->
-			<!-- Logo
-			<div id="logo">
-				<a href="/">
-					<img src="/wp-content/themes/quixel/img/logo.png" alt="Logo">
-				</a>
-			</div> -->
-
+<body <?php body_class(); ?>>
+<div id="wrapper964" class="clearfix">
 	<div id="header" class="clearfix">
 		<div id="sitetitle" class="clearfix">
-		<div id="header-image" class="clearfix">
+			<div id="header-image" class="clearfix">
+			</div>
 		</div>
-	</div>
-	<div id="nav" class="clearfix">
+		<div class="menu">
 		<?php wp_nav_menu(array('theme_location' => 'header-menu', 'items_wrap' => '<ul>%3$s</ul>', 'depth' => 1)); ?>
+		</div>
 		<?php 
 			// Lägg dit "Login"-sidebaren som ska innehålla Login-knappen
 			if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('loginlink')) 
 		?>
-	</div>
-				
-		<!-- </div>/Wrapper -->
-	<!-- </header>/Header -->
-	
-	<!-- Wrapper -->
-	<div class="wrapper">
-
-
-
-
+	</div> <!-- /Header -->

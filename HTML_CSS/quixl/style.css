@@ -699,3 +699,14 @@ black.td input {
 	line-height: 150%;
 	letter-spacing: 0;
 }
+
+
+/* ====== Basic page ====== */
+#contentpage {
+	padding: 30px 60px;
+}
+
+/* ====== iFrame page ====== */
+#contentiframe {
+	padding: 20px 30px;
+}

@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-	<!-- Här är submenyn -->
+	<!-- Andra menyn -->
 	<?php //Läs ut alla objekt i submenyn
 
 		//Lättare att läsa koden
@@ -16,16 +16,22 @@
 		$img = get_field('subMenuImg');
 		
 		echo '<div id="nav" class="clearfix">';
-			echo "<ul>";
-				echo "<li><a href='$link1'>$menu1</a></li>";
-				echo "<li><a href='$link2'>$menu2</a></li>";
-			echo "</ul>";
-			echo "<div id='offer'><p class='green'>$green</p><p>$black</p></div>";
+			echo "<div class='navbuttons'>";
+				echo "<p class='buttontext'><a href='$link1'>$menu1</a></p>";
+			echo "</div>";
+			echo "<div class='navbuttons'>";
+				echo "<p class='buttontext'><a href='$link2'>$menu2</a></p>";
+			echo "</div>";
+
+			echo "<div id='offer'><ul><li class='offer1'>$green</li><li class='offer2'>$black</li></ul></div>";
 			echo "<div id='productlogo'>";
 				echo "<img alt='$green' src='$img'>";
 			echo "</div> <!-- /productlogo -->";
 			echo "</div> <!-- /nav -->";
 	?>
+
+
+
 
 	<!-- Det här är bildspelet -->
 	<?php
@@ -67,10 +73,9 @@
 
 
 					// Skriv ut värdena i sina riktiga HTML-taggar
-					//echo "<a title='$alt' href='$link' $relShadowbox>"
-					echo "<img alt='$alt' src='$img' />";
-					//echo "<p> $content </p>";
-					//echo '</a>';
+					echo "<a title='$alt' href='$link' $relShadowbox>";
+					echo "<img alt='$alt' src='$img' title='$content' />";
+					echo '</a>';
 				}
 				echo '</div> <!-- /slider -->';
 			echo '</div> <!-- /slider-wrapper -->';
@@ -79,6 +84,9 @@
 
 
 
+
+
+<div id="content" class="clearfix">
 	<div class="tabber">
 
 		<!-- Innehållet i Master learning -->
@@ -116,9 +124,9 @@
 				echo "<hr>"; */
 
 				// Skriv ut värdena i sina riktiga HTML-taggar
-				echo '<div class="thumbnail">';
+				echo '<div class="inner">';
 				echo "<a title='$alt' href='$link' rel='shadowbox$width$height'><img alt='$alt' src='$img'></a>";
-				echo "<p>$headline</p>";
+				echo "<h3>$headline</h3>";
 				echo "<p>$subtitle</p>";
 				echo "</div>";
 
@@ -156,9 +164,9 @@
 				}
 
 				// Skriv ut värdena i sina riktiga HTML-taggar
-				echo '<div class="thumbnail">';
+				echo '<div class="inner">';
 				echo "<a title='$alt' href='$link' rel='shadowbox$width$height'><img alt='$alt' src='$img'></a>";
-				echo "<p>$headline</p>";
+				echo "<h3>$headline</h3>";
 				echo "<p>$subtitle</p>";
 				echo "</div>";
 
@@ -204,18 +212,16 @@
 
 
 				// Skriv ut värdena i sina riktiga HTML-taggar
-				echo '<div id="testimonial1">';
-					echo '<div class="inner2">';
-					echo "<h3>&ldquo;$headline&rdquo;</h3>";
-					echo "<p>&ndash; $subtitle";
-					echo "<a title='$alt' href='$link' rel='lightbox'> FULL</a></p>";
-					echo '</div>';
+				echo '<div class="inner2">';
+					echo "<h3><a href='$link'>&ldquo;$headline&rdquo;</a></h3>";
+					echo "<p class='author'>&ndash; $subtitle</p>";
+					echo "<a class='full' title='$alt' href='$link' rel='lightbox'> FULL</a>";
 				echo '</div>';
-
 			}
 			echo '</div>';
 		}
 	?>
+</div> <!-- /content -->
 
 	<?php endwhile; ?>
 	<?php else: ?>
