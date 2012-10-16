@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="Your description goes here" />
-	<meta name="keywords" content="your,keywords,goes,here" />
-	<meta name="author" content="Your Name" />
-	<link href='' rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" type="text/css" media="all" href="style2.css" /><!-- OBS! Shopen har eget stylesheet -->
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+	<link rel='stylesheet' id='contact-form-7-css'  href='http://quixel.se/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=3.3.1' media='all' />
+
+	<!-- Wordpress js -->
+	<!-- <script type='text/javascript' src='http://quixel.se/wp-includes/js/comment-reply.js?ver=3.4.2'></script>
+	<script type='text/javascript' src='http://quixel.se/wp-includes/js/jquery/jquery.js?ver=1.7.2'></script> -->
+
+	<!-- Nivo Slider -->
 	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+
+	<!-- Shadowbox -->
+	<link rel="stylesheet" type="text/css" href="shadowbox/shadowbox.css">
+	<script type="text/javascript" src="shadowbox/shadowbox.js"></script>
+	<script type="text/javascript">
+		Shadowbox.init();
+	</script>
+
+	<!-- Tabber.js -->
+	<script type="text/javascript" src="js/tabber.js"></script>
+	<script type="text/javascript">
+
+/* Optional: Temporarily hide the "tabber" class so it does not "flash"
+   on the page as plain HTML. After tabber runs, the class is changed
+   to "tabberlive" and it will appear. */
+
+	document.write('<style type="text/css">.tabber{display:none;}<\/style>');
+	</script>
+
 	<title>Quixel Shop</title>
 </head>
 
 <body>
-<div id="wrapper964shop" class="clearfix">
+<div id="wrapper964" class="clearfix">
 	
-
-		<!-- Header -->
+	<!-- Header -->
 	<div id="header" class="clearfix"> 
-		<div id="sitetitle" class="clearfix"> 
-			<div id="header-image" class="clearfix">
+		<div id="sitetitle" class=" "> 
+			<div id="header-image" class="">
 			</div>
 		</div>
 		
-	<!-- Ã–versta menyn -->
+	<!-- Översta menyn -->
 		<div class="menu">
 			<ul>
 				<li><a href="#">DDO</a></li>
@@ -32,60 +57,164 @@
 				<li><a href="#">COMMUNITY</a></li>
 				<li><a href="#">CONTACT</a></li>
 			</ul>
-			
-			<div class="login">
-				<div class="textwidget"><!-- Denna div mÃ¥ste finnas med -->
-					<a href="#">LOGIN</a>
-				</div>
-			</div> <!-- /Login -->
 		</div> <!-- /menu -->
+	
+		<div class="login">
+			<div class="textwidget"><!-- Denna div måste finnas med -->
+				<a href="#">LOGIN</a>
+			</div>
+		</div> <!-- /Login -->
 	</div> <!-- /header -->
-	
-<div id="content" class="clearfix">
 
-	<!-- Innehåll -->
-	<div id="shopcontent" class="clearfix">
-		
-		<!-- produktbild -->
-		<div id="productimage"> </div>
-		
-		<!-- produktinfo -->
-		<div id="productinfo"> </div>
-		
-		
-		
-		
+	<div class="shopmenu">
+		<div class="outerouter">
+			<a href="#" class="outer">	
+				<div class="upper" style="background:url(images/shopmenu1.jpg) no-repeat scroll 0 0 #000000;">
+					<p>
+						$299
+					</p>
+				</div>
+				<p>commercial license </p>
+			</a>
+		</div>
+		<div class="outerouter">
+			<a href="#" class="outer">	
+				<div class="upper" style="background:url(images/shopmenu2.jpg) no-repeat scroll 0 0 #000000;">
+					<p>
+						$99
+					</p>
+				</div>
+				<p>valid license </p>
+			</a>
+		</div>
+		<div class="outerouter">
+			<a href="#" class="outer">	
+				<div class="upper" style="background:url(images/shopmenu1.jpg) no-repeat scroll 0 0 #000000;">
+					<p>
+						$299
+					</p>
+				</div>
+				<p>commercial license </p>
+			</a>
+		</div>
+		<div class="outerouter">
+			<a href="#" class="outer">	
+				<div class="upper" style="background:url(images/shopmenu2.jpg) no-repeat scroll 0 0 #000000;">
+					<p>
+						$99
+					</p>
+				</div>
+				<p>valid license </p>
+			</a>
+		</div>
 	</div>
-	<!-- Här slutar shopcontent -->
+
+
+	<div id="contentshop" class="clearfix">
+		<div class="productleft">
+			<img src="images/shopdemo2.jpg" alt="" />
+		</div> <!-- /produktbild -->
+		<div class="productright">
+			<h1>nDo2 COMMERCIAL LICENSE (VOL.)</h1>
+           
+ 			<!-- här börjar WYSIWYG -->
+            <p>The <b>Commercial license</b> offers the <b>complete experience</b> of nDo2. It grants generous volume discounts up to 33%, and allows for <b>unrestricted commercial use</b>.<br /><br /> Are you an indie developer? Contact us for special deals.</p>
+
+            <table>
+                <tr>
+                	<td><strong>Qty</strong></td>
+                    <td>6-10</td>
+                    <td>11-25</td>
+                    <td>26-50</td>
+                    <td>51-100</td>
+                    <td>>100</td>                                                
+                </tr>
+            </table>
+                <hr>
+            <table>
+                <tr>
+                	<td><strong>Price</strong></td>
+                    <td>$279</td>
+                    <td>$259</td>
+                    <td>$239</td>
+                    <td>$219</td>
+                    <td>$199</td>                                                
+                </tr>                                                      
+            </table>
+
+<!-- här slutar WYSIWYG -->
+
+            <div class="buy_box">
+                <div class="creditcard" id="prestacart">
+        			<form action="http://www.quixel.se/store/company/cart.php" method="post">
+	                    <input type="hidden" name="id_product" value="11"/>
+	                    <input type="hidden" name="add" value="1" />
+                		<!-- <script src="http://api.jquery.com/scripts/events.js"></script> -->
+            			<div class="qty">Specify Quantity:<input type="text" name="qty" id="quantity_wanted" value="10" size="7"/></div>
+            			<script type="text/javascript">
+				            var f8 = new LiveValidation('quantity_wanted');
+				            f8.add(Validate.Discount1, { minimum: 6, maximum: 10 } );
+				        </script>
+						<div class="save">YOU SAVE:<input type="text" id="notice" value="$200" /></div>
+                    	<p class="cost">$299</p>
+                    	<img src="images/299.png" alt="" />
+                    	<input type="image" value="Add to cart" src="images/buy_now.png" border="0" alt="BUY NOW!" name="Submit">
+                    </form>
+                </div>
+			  	<p class="works_on">All prices are VAT excluded. <br />An internet connection is required to activate the license. <br />Compatible with Win XP, Vista & 7, and Photoshop CS3, CS4, CS5 & CS6.</p>
+            </div>
+
+		</div> <!-- /produktinfo -->
+	</div> <!-- /content -->
 	
+
 	<!-- Sidfot -->
 	<div id="footer">
-		<div class="leftfooter">
-		<p><a href=""><strong>BUY DDO</strong></a> | <a href=""><strong>BUY NDO</strong></a>
-		</p>	
-		</div>
-		<div class="rightfooter">
-		<p><a href="">DDO</a> | <a href="">NDO</a> | <a href="">STORE</a> |
-		 <a href="">COMMUNITY</a> | <a href="">CONTACT</a> | <a href="">LOGIN</a> |
-		 <a href="">CROSS-PROMOTION</a> | <a href="">PRESS</a>
-		</p>	
-		</div>
-	</div>
-	
-	<div id="footer2">
-	<div class="leftfooter">
-			<p><strong>&copy; 2012 QUIXEL.SE | CORP ID NO: 556859-5407</strong></p>
-	</div>
-	<div class="rightfooter">
-			<p><strong>ALL RIGHTS RESERVED</strong></p>
-	</div>
-	</div>
-	<!-- Slut pÃ¥ Sidfot -->
+		<div id="footer1">
+			<div class="leftfooter">
+				<p><a href=""><strong>BUY DDO</strong></a> | <a href=""><strong>BUY NDO</strong></a></p>	
+			</div>
+			<div class="rightfooter">
+			<p><a href="">DDO</a> | <a href="">NDO</a> | <a href="">STORE</a> |
+			 <a href="">COMMUNITY</a> | <a href="">CONTACT</a> | <a href="">LOGIN</a> |
+			 <a href="">CROSS-PROMOTION</a> | <a href="">PRESS</a>
+			</p>	
+			</div>
+		</div> <!-- /Footer1 -->
+		
+		<div id="footer2">
+			<div class="leftfooter">
+				<p><strong>&copy; 2012 QUIXEL.SE | CORP ID NO: 556859-5407</strong></p>
+			</div>
+			<div class="rightfooter">
+				<p><strong>ALL RIGHTS RESERVED</strong></p>
+			</div>
+		</div> <!-- /footer2 -->
+	</div><!-- /footer -->	
+</div><!-- /Wrapper964 -->
 
-</div>
+	<!-- Wordpress javascript -->
 
-	
-</div>
-	
+	<!-- Optimised Asynchronous Google Analytics --><script>var _gaq=[['_setAccount','UA-XXXXXXXX-X'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));</script><!-- Protocol Relative jQuery fall back if Google CDN offline --><script>window.jQuery || document.write('<script src='http://quixel.se/wp-content/themes/quixel/js/jquery-1.8.2.min.js'><\/script>')</script><script type='text/javascript' src='http://quixel.se/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.18'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/quixel.se\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Skickar..."};
+/* ]]> */
+</script>
+
+<!-- JS för contact-form-7 -->
+<!-- <script type='text/javascript' src='http://quixel.se/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=3.3.1'></script> -->
+
+
+
+	<!-- Nivo Slider script -->
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('#slider').nivoSlider();
+		});
+	</script>
 </body>
 </html>

@@ -55,9 +55,6 @@ p,ul{margin:0 0 20px 0;}
 /* Startsida innehåll */ 
 #startcontent{padding:20px 0px 20px 0px;background-color:#181818; height:auto;}
 
-/* Shop innehåll */ 
-#shopcontent{padding:20px 0px 20px 0px;background-color:#CCC; height:auto;}
-
 /* Container styling */
 .menu, #footer{
 	background:none;
@@ -245,7 +242,7 @@ li.tabberactive a:link, li.tabberactive a:link {
 }
 
 .tabbertab{
-	padding: 0 60px;
+	padding: 10px 60px;
 }
 
 .tabberlive{
@@ -257,7 +254,7 @@ li.tabberactive a:link, li.tabberactive a:link {
 /* tabber tab innehåll */
 .inner{
 	float:left;
-	margin: 10px;
+	margin: 0 10px 10px;
 	width:190px;
 	overflow:hidden;
 }
@@ -465,3 +462,240 @@ filter: progid:DXImageTransform.Microsoft.dropShadow(color=#171717, offX=5, offY
 
 .slider-wrapper .nivo-caption a{color:#fff;border-bottom:1px dotted #fff;}
 .slider-wrapper .nivo-caption a:hover{color:#fff;}
+
+
+
+/* ========== SHOP ============ */
+
+#contentshop{
+	border:1px solid #000;
+	margin: -28px 0 20px;
+    padding: 0;
+	background-color: #999999;
+	background-image: -webkit-gradient(linear, left center, right center, from(#999999), to(#999999), color-stop(.5,#EAEAEA)); /* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(left, #999999 0%, #EAEAEA 50%, #999999 100%)); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(left, #999999 0%, #EAEAEA 50%, #999999 100%); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(left, #999999 0%, #EAEAEA 50%, #999999 100%)); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to right, #999999 0%, #EAEAEA 50%, #999999 100%)); /* Firefox 16+, IE10, Opera 12.50+ */
+	color: #000;
+	font-size: 17px;
+	font-family: Calibri, Helvetica, Arial, sans-serif;
+	letter-spacing: -1px;
+	border: 1px solid black;
+	box-shadow: 0 0 10px #000000;
+}
+
+
+#contentshop h2, #contentshop h3, #contentshop h1{
+	color:#000;
+	font-family: arial;
+    font-weight: bold;
+    line-height: 80%;
+}
+
+#contentshop h1{
+    font-size: 48px;
+    letter-spacing: -4px;
+    margin: 0 0 20px;
+    }
+
+.shopmenu {
+width: 100%;
+display: inline-block;
+font-weight: bold;
+border-top: 1px solid black;
+}
+
+.shopmenu p {
+	margin:0;
+}
+
+.shopmenu .outerouter {
+    height: 128px;
+    float: left;
+}
+
+.shopmenu .outerouter:first-child {
+	border-left: 1px solid black;
+		margin-right: 1px;
+
+}
+
+.shopmenu .outerouter:nth-child(4) {
+	border-right: 1px solid black;
+	margin-left: 1px;
+}
+
+.shopmenu .outerouter:hover {
+    background: url("images/tagg.png") no-repeat scroll 140px 106px transparent;
+}
+
+.shopmenu .outer:link, .shopmenu .outer:visited {
+    color: #FFFFFF;
+    float: left;
+    height: 103px;
+    margin: 0;
+    overflow: visible;
+    padding: 3px 3px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 234px;
+    border-bottom: 1px solid black;
+}
+
+.shopmenu .outer:hover, .shopmenu .outer:active  {
+color: #000;
+background-color: #e5e5e5;
+}
+
+
+.shopmenu .upper {
+    color: #FFFFFF;
+    height: 85px;
+    position: relative;
+    opacity: 0.5;
+    border-bottom: 1px solid #2B2B2B;
+}
+
+.shopmenu .upper:hover {
+	opacity: 1;
+	border-bottom: 1px solid #d4d4d4;
+}
+
+.shopmenu .upper p{
+    bottom: 0;
+    font-family: Verdana,'Trebuchet MS',arial,Helvetica,sans-serif;
+    font-size: 30px;
+    line-height: normal;
+    margin: 0;
+    position: absolute;
+    right: 2px;
+    text-shadow: 0 0 3px #000000;
+
+}
+
+
+/* active 
+.shopmenu .lower:link, .shopmenu .lower:visited {
+	padding: 0;
+	display: inline-block;
+	border: 1px solid #1a1a1a;
+	background-color: #1a1a1a;
+	width: 100%;
+} 
+
+.shopmenu .lower:hover, .shopmenu .lower:active {
+	width: 100%;
+}
+
+.shopmenu .lower {
+	padding: 0;
+	width: 100%;
+}
+
+.shopmenu .lower p {
+	margin: 0;
+
+}
+*/
+
+
+.productleft{
+    float: left;
+    padding: 40px 0 20px 40px;
+    width: 400px;
+}
+
+.productright{
+    float: left;
+    padding: 40px 40px 20px 40px;
+    width: 440px;
+}
+
+.product table {
+	line-height:20px;
+	width:400px;
+}
+
+#contentshop td {
+    display: inline-block;
+    width: 67px;
+    text-align: center;
+}
+
+black.td {
+	background:#202020;
+	color:#fff;
+	font-size:20px;
+}
+
+black.td input {
+	background:none;
+	width:65px;
+	color:#fff;
+	text-align:center;
+	border:none;
+	font-size:20px;"
+}
+
+
+.creditcard{
+	width:410px; 
+	text-align:right;
+}
+
+.creditcard img {
+	float: left;
+	clear: left;
+}
+
+.creditcard p {
+    float: left;
+    font-family: verdana,'Trebuchet MS',arial,Helvetica,sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 40px;
+    margin: 0 0 10px;
+    text-shadow: -1px -1px 1px white;
+}
+
+.qty{
+	margin: 30px 10px 1px;
+}
+
+.qty input{
+	margin-left: 10px;
+	text-align: center;
+	width: 70px;
+}
+
+.save{
+    background-color: #000000;
+    color: #FFFFFF;
+    float: right;
+    line-height: 25px;
+	margin: 0 10px 20px 180px;
+    width: 220px;
+	font-size: 20px;
+}
+
+.save input {
+	background-color: #000;
+	color: #fff;
+	border: 3px solid #000000;
+	font-size: 20px;
+	text-align: right;
+	width: 70px;
+	text-align: center;
+	margin-left: 10px;
+}
+
+.works_on {
+	font-size: 12px;
+	text-align: center;
+	color: #000;
+	margin:20px 0 0 0;
+	line-height: 150%;
+	letter-spacing: 0;
+}
