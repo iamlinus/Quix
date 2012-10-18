@@ -108,7 +108,16 @@
 		
 
 
+<script type="text/javascript">
 
+$(".shopmenu div").each(function () {
+     if ($(this).find("a").attr("href") == window.location.href) {
+         $(this).addClass("current-menu-item");
+     }
+});
+
+
+</script>
 
 
 

@@ -42,13 +42,15 @@
 <body <?php body_class(); ?>>
 <div id="wrapper964" class="clearfix">
 	<div id="header" class="clearfix">
-		<div id="sitetitle" class="clearfix">
-			<div id="header-image" class="clearfix">
+		<a href="/">
+			<div id="sitetitle" class="clearfix">
+				<div id="header-image" class="clearfix">
+				</div>
 			</div>
-		</div>
-		<div class="menu">
-		<?php wp_nav_menu(array('theme_location' => 'header-menu', 'items_wrap' => '<ul>%3$s</ul>', 'depth' => 1)); ?>
-		</div>
+		</a>
+		<?php //wp_nav_menu(array('theme_location' => 'header-menu', 'items_wrap' => '<ul>%3$s</ul>', 'depth' => 1)); 
+		wp_nav_menu();
+		?>
 		<?php 
 			// Lägg dit "Login"-sidebaren som ska innehålla Login-knappen
 			if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('loginlink')) 
