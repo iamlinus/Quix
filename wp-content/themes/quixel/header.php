@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <!--[if lt IE 7]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
 <!--[if IE 7]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if IE 8]><html <?php language_attributes(); ?> class="no-js lt-ie9"><![endif]-->
@@ -23,7 +24,7 @@
 		Shadowbox.init();
 	</script>
 
-	<!-- Nivo slider -->
+	<!-- Nivo slider  -->
 	<script type="text/javascript" src="/wp-content/themes/quixel/js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="/wp-content/themes/quixel/js/jquery.nivo.slider.js"></script>
 
@@ -37,6 +38,10 @@
 
 	document.write('<style type="text/css">.tabber{display:none;}<\/style>');
 	</script>
+
+	<style type="text/css">
+		<?php the_field('css'); ?>
+	</style>
 
 </head>
 <body <?php body_class(); ?>>

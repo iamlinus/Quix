@@ -260,6 +260,7 @@ li.tabberactive a:link, li.tabberactive a:link {
 	margin: 0 10px 10px;
 	width:190px;
 	overflow:hidden;
+	/* height: 200px; */
 }
 .inner h3 {
     font-size: 16px;
@@ -467,6 +468,22 @@ filter: progid:DXImageTransform.Microsoft.dropShadow(color=#171717, offX=5, offY
 .slider-wrapper .nivo-caption a{color:#fff;border-bottom:1px dotted #fff;}
 .slider-wrapper .nivo-caption a:hover{color:#fff;}
 
+/* Carousel styling */
+
+.list_carousel {
+				background-color: #fuchsia;
+				margin: 0;
+				width: 800px;
+			}
+			.list_carousel ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				display: block;
+			}
+			.list_carousel li {
+
+			}
 
 
 /* ========== SHOP ============ */
@@ -688,4 +705,21 @@ black.td input {
 /* ====== iFrame page ====== */
 #contentiframe {
 	padding: 20px 30px;
+}
+
+
+/* ===== Forms ====== */
+
+.gform_wrapper ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.gfield {
+	margin: 20px 0;
+}
+
+.validation_message, .validation_error{
+	color: red;
 }

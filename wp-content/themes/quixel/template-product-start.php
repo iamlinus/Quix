@@ -84,19 +84,15 @@
 
 
 
-
-
 <div id="content" class="clearfix">
 	<div class="tabber">
-
 		<!-- Innehållet i Master learning -->
-	<?php
-		//Läser ut en repeater som en array här Master Learning
+	<?php //Läser ut en repeater som en array här Master Learning
 		$rows = get_field('masterLearningObject');
 		if($rows)
 		{
-			echo "<div class='tabbertab' title='" . get_field('masterLearningTitle') . "'>";
-		
+			echo "<div class='tabbertab list_carousel' title='" . get_field('masterLearningTitle') . "'>";
+			echo "<div id='foo2'>";
 			foreach($rows as $row)
 			{
 				//Definiera upp värdena så de blir lättare att jobba med
@@ -116,24 +112,22 @@
 					$height = ";height=" . $row['masterLearningHeight'];
 				}
 
-				/* Skriv ut värdena så vi ser vad vi får 
-				echo $img . "<br>";
-				echo $link . "<br>" ;
-				echo $headline . "<br>" ;
-				echo $subtitle . "<br>" ;
-				echo "<hr>"; */
-
 				// Skriv ut värdena i sina riktiga HTML-taggar
-				echo '<div class="inner">';
-				echo "<a title='$alt' href='$link' rel='shadowbox$width$height'><img alt='$alt' src='$img'></a>";
-				echo "<h3>$headline</h3>";
-				echo "<p>$subtitle</p>";
-				echo "</div>";
+						echo '<div class="inner">';
+							echo "<a title='$alt' href='$link' rel='shadowbox$width$height'><img alt='$alt' src='$img'></a>";
+							echo "<h3>$headline</h3>";
+							echo "<p>$subtitle</p>";
+						echo "</div>";
 
 			}
-			echo '</div>';
-		}
-	?>
+			?>
+		</div>
+			<div class="clearfix"></div>
+			<a id="prev2" class="prev" href="#">&lt;</a>
+			<a id="next2" class="next" href="#">&gt;</a>
+			<div id="pager2" class="pager"></div>
+		</div> <!-- //list_carousel -->
+	<?php } ?>
 
 		<!-- Innehållet i Tool Specs (likadan som Master learning) -->
 	<?php
