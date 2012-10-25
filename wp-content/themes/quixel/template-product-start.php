@@ -54,23 +54,22 @@
 					$alt = strip_tags($content);
 
 					// Kolla om lightbox är förkryssat, skriv isåfall ut rel="lightbox"
+					//Om bredd och höjd är satt lägg till detta i rel
 					if($row['slideshowShadowbox'] == TRUE)
 					{
 						$relShadowbox = 'rel="shadowbox"';
+						//Sätt variablerna om fälten inte är lika med 0
+						if ($row['slideshowShadowboxWidth'] != 0)
+						{
+							$width = ";width=" . $row['slideshowShadowboxWidth'];
+							$height = ";height=" . $row['slideshowShadowboxHeight'];
+							$relShadowbox = 'rel="shadowbox' . $width . $height . '"';
+						}
 					}
 					else
 					{
 						$relShadowbox = '';
 					}
-
-					/* Skriv ut värdena så vi ser vad vi får
-					echo $img . "<br>";
-					echo $link . "<br>" ;
-					echo $lightbox . "<br>" ;
-					echo $relLightbox . "<br>" ;
-					echo $content . "<br>" ;
-					echo "<hr>"; */
-
 
 					// Skriv ut värdena i sina riktiga HTML-taggar
 					echo "<a title='$alt' href='$link' $relShadowbox>";
@@ -91,8 +90,7 @@
 		$rows = get_field('masterLearningObject');
 		if($rows)
 		{
-			echo "<div class='tabbertab list_carousel' title='" . get_field('masterLearningTitle') . "'>";
-			echo "<div id='foo2'>";
+			echo "<div class='tabbertab' title='" . get_field('masterLearningTitle') . "'>";
 			foreach($rows as $row)
 			{
 				//Definiera upp värdena så de blir lättare att jobba med
@@ -121,12 +119,7 @@
 
 			}
 			?>
-		</div>
-			<div class="clearfix"></div>
-			<a id="prev2" class="prev" href="#">&lt;</a>
-			<a id="next2" class="next" href="#">&gt;</a>
-			<div id="pager2" class="pager"></div>
-		</div> <!-- //list_carousel -->
+		</div> <!-- /tabbertab -->
 	<?php } ?>
 
 		<!-- Innehållet i Tool Specs (likadan som Master learning) -->

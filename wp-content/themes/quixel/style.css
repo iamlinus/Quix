@@ -24,7 +24,6 @@ p,ul{margin:0 0 20px 0;}
 #wrapper964{
 	margin:20px auto; 
 	width:964px; 
-	box-shadow:#111 0 0 20px;
 }
 
 #wrapper964shop{margin:20px auto; width:964px; background:#8b8c8e; url(images/bild.jpg) top left;box-shadow:#111 0 0 20px;}
@@ -43,7 +42,7 @@ p,ul{margin:0 0 20px 0;}
 #sitetitle h1 {font-size:36px;color:#fff;margin:0;padding:0;}
 #header-image{margin:0;padding:0;}
 #content{
-	background-color:#0c0c0c;
+	background-color:#181818;
 	border-right: 1px solid #242424;
 	border-left: 1px solid #242424;
     margin: 0 0 20px;
@@ -53,7 +52,11 @@ p,ul{margin:0 0 20px 0;}
 #content h2,#content h3,#content h4{color:#FFF;}
 
 /* Startsida innehåll */ 
-#startcontent{padding:20px 0px 20px 0px;background-color:#181818; height:auto;}
+#startcontent{
+	padding:20px 0px 20px 0px;
+	background-color:#181818;
+	height:auto;
+}
 
 /* Container styling */
 #footer{
@@ -435,7 +438,7 @@ filter: progid:DXImageTransform.Microsoft.dropShadow(color=#171717, offX=5, offY
 	position:absolute;
 	left:846px;
 	top:30px;
-	background:#000;
+	background:#181818;
 	color:#fff;
 	opacity:0.8;
 	width:100%;
@@ -455,7 +458,7 @@ filter: progid:DXImageTransform.Microsoft.dropShadow(color=#171717, offX=5, offY
 .nivo-controlNav a.active{font-weight:700;}
 
 /*Nivo Slider styling*/
-.slider-wrapper .nivoSlider{position:absolute;height:300px;top:-2px;right:19%;background:#1a1a1a url(images/loading.gif) no-repeat 50% 50%;margin-bottom:0px;}
+.slider-wrapper .nivoSlider{position:absolute;height:300px;top:-2px;right:19%;background:#181818 url(images/loading.gif) no-repeat 50% 50%;margin-bottom:0px;}
 .slider-wrapper .nivoSlider img{position:absolute;top:0px;left:0;display:none;}
 .slider-wrapper .nivoSlider a{border:0;display:block;}
 .slider-wrapper .nivo-controlNav{position:absolute;left:72%;bottom:0px;margin-left:0px;/* Tweak this to center bullets */}
@@ -471,19 +474,18 @@ filter: progid:DXImageTransform.Microsoft.dropShadow(color=#171717, offX=5, offY
 /* Carousel styling */
 
 .list_carousel {
-				background-color: #fuchsia;
-				margin: 0;
-				width: 800px;
-			}
-			.list_carousel ul {
-				margin: 0;
-				padding: 0;
-				list-style: none;
-				display: block;
-			}
-			.list_carousel li {
+margin: 0;
+width: 800px;
+}
+.list_carousel ul {
+margin: 0;
+padding: 0;
+list-style: none;
+display: block;
+}
+.list_carousel li {
 
-			}
+}
 
 
 /* ========== SHOP ============ */
