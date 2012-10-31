@@ -24,26 +24,13 @@
 		Shadowbox.init();
 	</script>
 
-	<!-- Nivo slider  -->
-	<script type="text/javascript" src="/wp-content/themes/quixel/js/jquery-1.7.1.min.js"></script>
-	<script type="text/javascript" src="/wp-content/themes/quixel/js/jquery.nivo.slider.js"></script>
-
-	<!-- tabber.js -->
-	<script type="text/javascript" src="/wp-content/themes/quixel/js/tabber.js"></script>
-	<script type="text/javascript">
-
-	/* Optional: Temporarily hide the "tabber" class so it does not "flash" 
-	on the page as plain HTML. After tabber runs, the class is changed
-	to "tabberlive" and it will appear. */
-
-	document.write('<style type="text/css">.tabber{display:none;}<\/style>');
-	</script>
-
+	
+	<!-- Hämta sid-specifik CSS -->
 	<style type="text/css">
 		<?php the_field('css'); ?>
 	</style>
-
 </head>
+
 <body <?php body_class(); ?>>
 <div id="wrapper964" class="clearfix">
 	<div id="header" class="clearfix">
@@ -55,7 +42,13 @@
 		</a>
 		<?php //wp_nav_menu(array('theme_location' => 'header-menu', 'items_wrap' => '<ul>%3$s</ul>', 'depth' => 1)); 
 		wp_nav_menu();
-		?>
+		?><ul class="menu nowidth">
+			<li>
+			<?php // Lägg dit "Kontakt"-sidebaren som ska innehålla kontakt-knappen
+			if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('contactlink')) ?>
+			</li>
+		</ul>
+		
 		<?php 
 			// Lägg dit "Login"-sidebaren som ska innehålla Login-knappen
 			if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('loginlink')) 

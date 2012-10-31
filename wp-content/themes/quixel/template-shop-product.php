@@ -40,7 +40,7 @@
 			echo "<div class='outerouter'>";
 				echo "<a href='$link' class='outer'>";
 					echo "<div class='upper' style='background: url($img) no-repeat scroll 0 0 #000000;'>";
-						echo "<p>" . $cost . "</p>";
+						echo "<p>$" . $cost . "</p>";
 					echo "</div>";
 					echo "<p>" . $name  . "</p>";
 				echo "</a>";
@@ -96,7 +96,7 @@
 				            f8.add(Validate.Discount1, { minimum: 6, maximum: 10 } );
 				        </script>
 						<div class="save">YOU SAVE:<input type="text" id="notice" value="$200" /></div>
-                    	<p class="cost"><?php echo $cost ?></p>
+                    	<p class="cost"><span style="font-size:40px;font-family:'Trebuchet MS';font-weight:bold;">$</span><?php echo $cost ?></p>
                     	<img src="/wp-content/themes/quixel/images/299.png" alt="" />
                     	<input type="image" value="Add to cart" src="/wp-content/themes/quixel/images/buy_now.png" border="0" alt="<?php echo $purchase ?>" name="Submit">
                     </form>
@@ -109,14 +109,11 @@
 
 
 <script type="text/javascript">
-
 $(".shopmenu div").each(function () {
      if ($(this).find("a").attr("href") == window.location.href) {
          $(this).addClass("current-menu-item");
      }
 });
-
-
 </script>
 
 

@@ -152,12 +152,23 @@ Custom functions, support, custom post types and more.
 	
 	// If Dynamic Sidebar Exists
 	if(function_exists('register_sidebar')) {
+
+		// Detta är för att kunna sätta Kontakt-knappen dynamiskt
+		register_sidebar(array(
+			'name' => __( 'Contact link', 'html5blank' ),
+			'id' => 'contactlink',
+			'description' => __( 'Write HTML for the menu option "Contact"', 'html5blank' ),
+			'before_widget' => '',
+			'after_widget' => '',
+			'before_title' => '',
+			'after_title' => '',
+		));
 	
 		// Detta är för att kunna sätta Login-knappen dynamiskt
 		register_sidebar(array(
 			'name' => __( 'Login link', 'html5blank' ),
 			'id' => 'loginlink',
-			'description' => __( 'Skriv HTML för länktext och länk för Login-menyvalet', 'html5blank' ),
+			'description' => __( 'Write HTML for the menu option "Login"', 'html5blank' ),
 			'before_widget' => '<div class="login">',
 			'after_widget' => '</div>',
 			'before_title' => '',
@@ -166,8 +177,8 @@ Custom functions, support, custom post types and more.
 		
 		// Detta är övre raden i sidfoten
 		register_sidebar(array(
-			'name' => __( 'Sidfot Övre', 'html5blank' ),
-			'description' => __( 'Detta är övre raden i sidfoten. Kan innehålla 2 text-ytor med HTML.', 'html5blank' ),
+			'name' => __( 'Upper footer', 'html5blank' ),
+			'description' => __( 'This is the upper row in the footer. It can contain two text widgets.', 'html5blank' ),
 			'id' => 'footerupper',
 			'before_widget' => '<div id="%1$s" class="%2$s">',
 			'after_widget' => '</div>',
@@ -177,8 +188,8 @@ Custom functions, support, custom post types and more.
 
 		// Detta är undre raden i sidfoten
 		register_sidebar(array(
-			'name' => __( 'Sidfot Undre', 'html5blank' ),
-			'description' => __( 'Detta är undre raden i sidfoten. Kan innehålla 2 text-ytor med HTML.', 'html5blank' ),
+			'name' => __( 'Lower footer', 'html5blank' ),
+			'description' => __( 'This is the lower row in the footer. It can contain two text widgets.', 'html5blank' ),
 			'id' => 'footerlower',
 			'before_widget' => '<div id="%1$s" class="%2$s">',
 			'after_widget' => '</div>',

@@ -80,7 +80,7 @@ p,ul{margin:0 0 20px 0;}
 .menu{
     margin-right: 0;
     position: relative;
-    width: 550px;
+    width: 500px;
     float:left;
     list-style:none;
 	margin:0;
@@ -89,8 +89,9 @@ p,ul{margin:0 0 20px 0;}
 	z-index: 4;
 	padding: 50px 0 0 0;
 }
-.menu ul{
 
+.menu.nowidth {
+    width: auto;
 }
 
 .menu li{
@@ -248,7 +249,7 @@ li.tabberactive a:link, li.tabberactive a:link {
 }
 
 .tabbertab{
-	padding: 10px 60px;
+	padding: 10px 0;
 }
 
 .tabberlive{
@@ -475,18 +476,51 @@ filter: progid:DXImageTransform.Microsoft.dropShadow(color=#171717, offX=5, offY
 
 .list_carousel {
 margin: 0;
-width: 800px;
-}
-.list_carousel ul {
-margin: 0;
-padding: 0;
-list-style: none;
-display: block;
-}
-.list_carousel li {
-
+width: 900px;
 }
 
+.prev {
+	float:left;
+	vertical-align: center;
+	width: 20px;
+	height: 20px;
+	background: url("images/arrows_s.png") no-repeat scroll 0 0 transparent;
+	margin: 110px 30px 0 10px;
+}
+
+.next {
+	float:right;
+	vertical-align: center;
+	width: 20px;
+	height: 20px;
+	background: url("images/arrows_s.png") no-repeat scroll -20px 0 transparent;
+    margin: 110px 10px 0 30px;
+}
+
+.caroufredsel_wrapper {
+	margin: 0 60px !important;
+}
+
+.next.disabled, .prev.disabled {
+opacity: 0;
+}
+
+.next:hover {
+	background: url("images/arrows_s.png") no-repeat scroll -17px 0 transparent;
+
+}
+.prev:hover {
+
+    background: url("images/arrows_s.png") no-repeat scroll 3px 0 transparent;
+}
+
+
+.prev, .next, .prev:hover, .next:hover{
+	  -webkit-transition: all 0.2s linear;  /* Safari 3.2+, Chrome */
+     -moz-transition: all 0.2s linear;  /* Firefox 4-15 */
+       -o-transition: all 0.2s linear;  /* Opera 10.5–12.00 */
+          transition: all 0.2s linear;  /* Firefox 16+, Opera 12.50+ */
+}
 
 /* ========== SHOP ============ */
 

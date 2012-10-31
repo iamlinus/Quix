@@ -1,6 +1,53 @@
 <?php /* Template Name: Product start template */ ?>
 
 <?php get_header(); ?>
+	<!-- jQuery -->
+	<script type="text/javascript" language="javascript" src="/wp-content/themes/quixel/js/jquery-1.8.2.min.js"></script>
+
+    <!-- carouFredSel plugin -->
+    <script type="text/javascript" language="javascript" src="/wp-content/themes/quixel/js/jquery.carouFredSel-6.1.0-packed.js"></script>
+	
+	<!-- Nivo slider  -->
+	<script type="text/javascript" src="/wp-content/themes/quixel/js/jquery.nivo.slider.js"></script>
+
+	<!-- tabber.js -->
+	<script type="text/javascript" src="/wp-content/themes/quixel/js/tabber.js"></script>
+	
+    <!-- fire plugin onDocumentReady -->
+    <script type="text/javascript" language="javascript">
+      $(function() {
+        //  Scrolled by user interaction
+        $('#masterLearningID').carouFredSel({
+	        auto: false,
+	        circular: false,
+			infinite: false,
+	        prev: '#prev',
+	        next: '#next',
+	        pagination: "",
+	        mousewheel: false,
+	        swipe: {
+	            onMouse: false,
+	            onTouch: false
+	        }
+        });
+
+       //  Scrolled by user interaction
+        $('#toolSpecID').carouFredSel({
+	        auto: false,
+	        circular: false,
+	        prev: '#prev2',
+	        next: '#next2',
+	        pagination: "",
+	        mousewheel: false,
+	        swipe: {
+	            onMouse: false,
+	            onTouch: false
+	        }
+        });
+
+      });
+    </script>
+
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 	<!-- Andra menyn -->
@@ -90,7 +137,13 @@
 		$rows = get_field('masterLearningObject');
 		if($rows)
 		{
+
+				// Klassnamn och ID är måste för att JSn ska funka. 
 			echo "<div class='tabbertab' title='" . get_field('masterLearningTitle') . "'>";
+				echo '<a id="prev" class="prev" href="#"> </a>';
+				echo '<a id="next" class="next" href="#"> </a>';
+				echo "<div class='list_carousel'>";
+					echo "<div id='masterLearningID'>";
 			foreach($rows as $row)
 			{
 				//Definiera upp värdena så de blir lättare att jobba med
@@ -111,7 +164,7 @@
 				}
 
 				// Skriv ut värdena i sina riktiga HTML-taggar
-						echo '<div class="inner">';
+						echo '<div class="inner item">';
 							echo "<a title='$alt' href='$link' rel='shadowbox$width$height'><img alt='$alt' src='$img'></a>";
 							echo "<h3>$headline</h3>";
 							echo "<p>$subtitle</p>";
@@ -119,8 +172,14 @@
 
 			}
 			?>
-		</div> <!-- /tabbertab -->
+			</div> <!-- /masterLearningID -->
+
+			<div class="clearfix"></div>
+		</div> <!-- /list_carousel -->
+	</div> <!-- /tabbertab  -->
 	<?php } ?>
+
+
 
 		<!-- Innehållet i Tool Specs (likadan som Master learning) -->
 	<?php
@@ -129,6 +188,10 @@
 		if($rows)
 		{
 			echo "<div class='tabbertab' title='" . get_field('toolSpecTitle') . "'>";
+				echo '<a id="prev2" class="prev" href="#"> </a>';
+				echo '<a id="next2" class="next" href="#"> </a>';
+				echo "<div class='list_carousel'>";
+					echo "<div id='toolSpecID'>";
 		
 			foreach($rows as $row)
 			{
@@ -152,14 +215,18 @@
 
 				// Skriv ut värdena i sina riktiga HTML-taggar
 				echo '<div class="inner">';
-				echo "<a title='$alt' href='$link' rel='shadowbox$width$height'><img alt='$alt' src='$img'></a>";
-				echo "<h3>$headline</h3>";
-				echo "<p>$subtitle</p>";
+					echo "<a title='$alt' href='$link' rel='shadowbox$width$height'><img alt='$alt' src='$img'></a>";
+					echo "<h3>$headline</h3>";
+					echo "<p>$subtitle</p>";
 				echo "</div>";
 
-			}
-			echo '</div>';
-		}
+			} ?>
+			</div> <!-- /toolSpecID -->
+
+			<div class="clearfix"></div>
+		</div> <!-- /list_carousel -->
+	</div> <!-- /tabbertab  -->
+		<?php }
 	?>
 
 
