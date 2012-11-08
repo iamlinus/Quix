@@ -25,6 +25,7 @@
 	        next: '#next',
 	        pagination: "",
 	        mousewheel: false,
+	        height: 260,
 	        swipe: {
 	            onMouse: false,
 	            onTouch: false
@@ -39,11 +40,30 @@
 	        next: '#next2',
 	        pagination: "",
 	        mousewheel: false,
+	        height: 260,
 	        swipe: {
 	            onMouse: false,
 	            onTouch: false
 	        }
         });
+
+        //  Scrolled by user interaction
+        $('#testimonials').carouFredSel({
+	        auto: false,
+	        circular: false,
+	        prev: '#prev3',
+	        next: '#next3',
+	        pagination: "",
+	        mousewheel: false,
+	        width: "920",
+	        infinite: false,
+
+	        swipe: {
+	            onMouse: false,
+	            onTouch: false
+	        }
+        });
+
 
       });
     </script>
@@ -132,6 +152,7 @@
 
 <div id="content" class="clearfix">
 	<div class="tabber">
+	
 		<!-- Innehållet i Master learning -->
 	<?php //Läser ut en repeater som en array här Master Learning
 		$rows = get_field('masterLearningObject');
@@ -180,6 +201,13 @@
 	<?php } ?>
 
 
+	<!-- Innehållet i Community Highlights -->
+	<?php
+		echo "<div class='tabbertab' title='" . get_field('communityHighlightsTitle') . "' >";
+		//Läser ut ett enstaka fält - här Community highlights
+		the_field('communityHighlightsContent'); 
+		echo "</div>";
+	?>
 
 		<!-- Innehållet i Tool Specs (likadan som Master learning) -->
 	<?php
@@ -230,16 +258,9 @@
 	?>
 
 
-	<!-- Innehållet i Community Highlights -->
-	<?php
-		echo "<div class='tabbertab' title='" . get_field('communityHighlightsTitle') . "' >";
-		//Läser ut ett enstaka fält - här Community highlights
-		the_field('communityHighlightsContent'); 
-		echo "</div>";
-	?>
 
 	</div> <!-- /tabber -->
-
+	<div class="testis">
 
 	<!-- Innehållet i Testimonials -->
 	<?php
@@ -247,7 +268,11 @@
 		$rows = get_field('testimonialsObject');
 		if($rows)
 		{
-			echo '<div id="testimonials">';
+				echo '<a id="prev3" class="prev" href="#"> </a>';
+				echo '<a id="next3" class="next" href="#"> </a>';
+			echo "<div class='list_carousel_testi'>";
+				echo '<div id="testimonials">';
+
 		
 			foreach($rows as $row)
 			{
@@ -272,9 +297,12 @@
 					echo "<a class='full' title='$alt' href='$link' rel='lightbox'> FULL</a>";
 				echo '</div>';
 			}
-			echo '</div>';
+			echo '</div> <!-- /testimonials -->
+			</div> <!-- /list_carousel -->';
+
 		}
 	?>
+	</div> <!-- testis -->
 </div> <!-- /content -->
 
 	<?php endwhile; ?>

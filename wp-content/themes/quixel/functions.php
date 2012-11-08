@@ -74,21 +74,12 @@ Custom functions, support, custom post types and more.
 	
 	// Load Optimised Google Analytics in the footer
 	function add_google_analytics() { 
-		echo "<!-- Optimised Asynchronous Google Analytics -->";
-		echo "<script>";  // Change the UA-XXXXXXXX-X to your Account ID
-		echo "var _gaq=[['_setAccount','UA-XXXXXXXX-X'],['_trackPageview']];
-			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-			s.parentNode.insertBefore(g,s)}(document,'script'));";
-		echo "</script>";
+		echo " ";
 	}
 	
 	// jQuery Fallbacks load in the footer
 	function add_jquery_fallback() {
-		echo "<!-- Protocol Relative jQuery fall back if Google CDN offline -->";
-		echo "<script>";
-		echo "window.jQuery || document.write('<script src='".get_bloginfo('template_url')."/js/jquery-1.8.2.min.js'><\/script>')";
-		echo "</script>";
+		echo " ";
 	}
 	
 	// Threaded Comments
@@ -272,7 +263,7 @@ Custom functions, support, custom post types and more.
    add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
    add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
    add_action( 'init', 'register_html5_menu' ); // Add HTML5 Blank Menu
-   add_action( 'init', 'create_post_type_html5' ); // Add our HTML5 Blank Custom Post Type
+   //add_action( 'init', 'create_post_type_html5' ); // Add our HTML5 Blank Custom Post Type
    add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
    add_action( 'init', 'html5wp_pagination' ); // Add our HTML5 Pagination
    
@@ -318,7 +309,7 @@ Custom functions, support, custom post types and more.
    
 /* =============================================================================
    Custom Post Types
-   ========================================================================== */
+   ========================================================================== 
 
 	function create_post_type_html5() { // Create 1 Custom Post type for a Demo, called HTML5-Blank
 			register_taxonomy_for_object_type('category','html5-blank'); // Register Taxonomies for Category
@@ -347,7 +338,7 @@ Custom functions, support, custom post types and more.
 					'taxonomies' => array( 'post_tag', 'category'), // Add Category and Post Tags support
 	                )
 	        );
-	}
+	} */
 
 /* =============================================================================
    Shortcodes

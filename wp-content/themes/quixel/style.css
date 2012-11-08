@@ -80,7 +80,6 @@ p,ul{margin:0 0 20px 0;}
 .menu{
     margin-right: 0;
     position: relative;
-    width: 500px;
     float:left;
     list-style:none;
 	margin:0;
@@ -88,10 +87,11 @@ p,ul{margin:0 0 20px 0;}
 	position:relative;
 	z-index: 4;
 	padding: 50px 0 0 0;
+	width: 450px;
 }
 
 .menu.nowidth {
-    width: auto;
+	width:auto;
 }
 
 .menu li{
@@ -109,6 +109,7 @@ p,ul{margin:0 0 20px 0;}
     position: relative;
     text-align: right;
     z-index: 4;
+    margin-left: 120px;
     }
 
 /* Navigation menu */
@@ -289,28 +290,25 @@ li.tabberactive a:link, li.tabberactive a:link {
 #testimonials{
 	clear:both;
 	text-align:left; 
-    outline: solid 1px black; 
-    border: 1px solid;
-    border-top-color: #505050;
-    border-bottom-color: #272727;
-    border-left-color: #333;
-    border-right-color: #333;
-    background-color: #272727;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#313131), to(#212121)); /* Safari 4+, Chrome */
-  background-image: -webkit-linear-gradient(top, #313131, #212121); /* Chrome 10+, Safari 5.1+, iOS 5+ */
-  background-image:    -moz-linear-gradient(top, #313131, #212121); /* Firefox 3.6-15 */
-  background-image:      -o-linear-gradient(top, #313131, #212121); /* Opera 11.10-12.00 */
-  background-image:         linear-gradient(to bottom, #313131, #212121); /* Firefox 16+, IE10, Opera 12.50+ */
-  padding: 0 25px;
-  	display: table;
   	width: 910px;
 }
+
+
+
 .inner2{
 	margin:0px 5px; 
 	float:left; 
 	text-transform:uppercase;
 	display: inline-block;
-	width: 217px;
+	width: 211px;
+}
+
+.inner2:first-child {
+	margin:0 5px 0 0;
+}
+
+.inner2:last-child {
+	margin:0 0 0 5px;
 }
 
 .inner2 h3 {
@@ -479,12 +477,36 @@ margin: 0;
 width: 900px;
 }
 
+.list_carousel > div {
+	margin: 0 60px !important;
+}
+
+.list_carousel_testi {
+margin: 0;
+width: 960px;
+   outline: solid 1px black; 
+    border: 1px solid;
+    border-top-color: #505050;
+    border-bottom-color: #272727;
+    border-left-color: #333;
+    border-right-color: #333;
+    background-color: #272727;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#313131), to(#212121)); /* Safari 4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #313131, #212121); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #313131, #212121); /* Firefox 3.6-15 */
+  background-image:      -o-linear-gradient(top, #313131, #212121); /* Opera 11.10-12.00 */
+  background-image:         linear-gradient(to bottom, #313131, #212121); /* Firefox 16+, IE10, Opera 12.50+ */
+}
+
 .prev {
 	float:left;
 	vertical-align: center;
 	width: 20px;
 	height: 20px;
 	background: url("images/arrows_s.png") no-repeat scroll 0 0 transparent;
+}
+
+#prev, #prev2 {
 	margin: 110px 30px 0 10px;
 }
 
@@ -494,19 +516,20 @@ width: 900px;
 	width: 20px;
 	height: 20px;
 	background: url("images/arrows_s.png") no-repeat scroll -20px 0 transparent;
-    margin: 110px 10px 0 30px;
+
 }
 
-.caroufredsel_wrapper {
-	margin: 0 60px !important;
+#next, #next2 {
+	    margin: 110px 10px 0 30px;
 }
 
-.next.disabled, .prev.disabled {
-opacity: 0;
+#prev3, #next3 {
+    margin: 35px 10px;
 }
+
 
 .next:hover {
-	background: url("images/arrows_s.png") no-repeat scroll -17px 0 transparent;
+	background: url("images/arrows_s.png") no-repeat scroll -18px 0 transparent;
 
 }
 .prev:hover {
@@ -520,6 +543,11 @@ opacity: 0;
      -moz-transition: all 0.2s linear;  /* Firefox 4-15 */
        -o-transition: all 0.2s linear;  /* Opera 10.5–12.00 */
           transition: all 0.2s linear;  /* Firefox 16+, Opera 12.50+ */
+}
+
+.next.disabled, .prev.disabled {
+opacity: 0;
+display: none;
 }
 
 /* ========== SHOP ============ */
