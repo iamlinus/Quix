@@ -14,7 +14,10 @@
 	
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 
-	<!-- CSS + jQuery + JavaScript -->
+	<!-- jQuery -->
+	<script type="text/javascript" src="/wp-content/themes/quixel/js/jquery-1.8.2.min.js"></script>
+
+	<!-- CSS + jQuery + JavaScript wp_head -->
 	<?php wp_head(); ?>
 	
 	<!-- Shadowbox -->
@@ -23,6 +26,7 @@
 	<script type="text/javascript">
 		Shadowbox.init();
 	</script>
+
 
 	
 	<!-- Hämta sid-specifik CSS -->

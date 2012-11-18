@@ -1,11 +1,9 @@
 <?php /* Template Name: Product start template */ ?>
 
 <?php get_header(); ?>
-	<!-- jQuery -->
-	<script type="text/javascript" language="javascript" src="/wp-content/themes/quixel/js/jquery-1.8.2.min.js"></script>
-
+	
     <!-- carouFredSel plugin -->
-    <script type="text/javascript" language="javascript" src="/wp-content/themes/quixel/js/jquery.carouFredSel-6.1.0-packed.js"></script>
+    <script type="text/javascript" src="/wp-content/themes/quixel/js/jquery.carouFredSel-6.1.0-packed.js"></script>
 	
 	<!-- Nivo slider  -->
 	<script type="text/javascript" src="/wp-content/themes/quixel/js/jquery.nivo.slider.js"></script>
@@ -14,7 +12,7 @@
 	<script type="text/javascript" src="/wp-content/themes/quixel/js/tabber.js"></script>
 	
     <!-- fire plugin onDocumentReady -->
-    <script type="text/javascript" language="javascript">
+    <script type="text/javascript">
       $(function() {
         //  Scrolled by user interaction
         $('#masterLearningID').carouFredSel({
@@ -304,6 +302,13 @@
 	?>
 	</div> <!-- testis -->
 </div> <!-- /content -->
+
+<!-- Nivo Slider script -->
+<script type="text/javascript">
+	$(window).load(function() {
+		$('#slider').nivoSlider();
+	});
+</script>
 
 	<?php endwhile; ?>
 	<?php else: ?>

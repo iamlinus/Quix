@@ -8,18 +8,6 @@
 		</div> <!-- /footer2 -->
 	</div><!-- /footer -->	
 </div> <!-- /Wrapper964 -->
-	
-
-
-
 	<?php wp_footer(); ?>
-
-
-	<!-- Nivo Slider script -->
-<script type="text/javascript">
-	$(window).load(function() {
-		$('#slider').nivoSlider();
-	});
-</script>
 </body>
 </html>

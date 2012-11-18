@@ -21,23 +21,32 @@ p,ul{margin:0 0 20px 0;}
 
 /* Wrapper */
 
-#wrapper964{
+#wrapper964 {
 	margin:20px auto; 
 	width:964px; 
 }
 
-#wrapper964shop{margin:20px auto; width:964px; background:#8b8c8e; url(images/bild.jpg) top left;box-shadow:#111 0 0 20px;}
+#wrapper964shop {
+	margin:20px auto;
+	width:964px; 
+	background-color:#8b8c8e;
+	box-shadow: #000000 0 0 20px;
+}
 
 /* Layout IDs */
-#header{position:relative;}
-#sitetitle{
+#header{
+	position: relative;
+}
+
+#sitetitle {
 	float:left;
 	margin: 0 0 0 12px;
 	background:#fff url(images/logga.jpg);
 	width:207px;
 	height:72px;
 	position:relative;
-	z-index: 4;}
+	z-index: 4;
+}
 
 #sitetitle h1 {font-size:36px;color:#fff;margin:0;padding:0;}
 #header-image{margin:0;padding:0;}
@@ -143,7 +152,13 @@ p,ul{margin:0 0 20px 0;}
 
 }
 
-#nav a{text-decoration:none; color:#FFF;text-shadow: text-shadow: 2px 2px 1px rgba(0, 0, 0, 1); text-transform:uppercase;}
+#nav a{
+	text-decoration:none; 
+	color:#FFF;
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+	text-transform:uppercase;
+}
+
 #nav a:hover{color:#FFF;text-decoration:none;}
 .navbuttons {
 	float:left;
@@ -276,15 +291,12 @@ li.tabberactive a:link, li.tabberactive a:link {
 }
 
 .inner p {
-	color: ##2C2C2C;
+	color: #2C2C2C;
 	text-transform: uppercase;
 	font-style: italic;
 	margin: 0;
 }
 
-.inner a:link, .inner a:visited, .inner a:hover, .inner a:active {
-
-}
 
 /* Testimonials */
 #testimonials{
@@ -407,10 +419,9 @@ a.full:active, a.full:hover {
 .clear{clear:both;}
 .left{float:left;}
 .right{float:right;}
-.boxshadow{box-shadow: 5px 5px #171717;
--webkit-box-shadow: 5px 5px #171717;
--moz-box-shadow: 5px 5px #171717;
-filter: progid:DXImageTransform.Microsoft.dropShadow(color=#171717, offX=5, offY=5, positive=true);
+.boxshadow {
+ -webkit-box-shadow: 5px 5px 4px 0px #171717; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+          box-shadow: 5px 5px 4px 0px #171717; /* Opera 10.5, IE9+, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
 /* Fixar Float */
@@ -481,6 +492,10 @@ width: 900px;
 	margin: 0 60px !important;
 }
 
+.list_carousel_testi > div {
+    margin: 0 20px !important;
+}
+
 .list_carousel_testi {
 margin: 0;
 width: 960px;
@@ -500,7 +515,6 @@ width: 960px;
 
 .prev {
 	float:left;
-	vertical-align: center;
 	width: 20px;
 	height: 20px;
 	background: url("images/arrows_s.png") no-repeat scroll 0 0 transparent;
@@ -512,7 +526,6 @@ width: 960px;
 
 .next {
 	float:right;
-	vertical-align: center;
 	width: 20px;
 	height: 20px;
 	background: url("images/arrows_s.png") no-repeat scroll -20px 0 transparent;
@@ -552,19 +565,19 @@ display: none;
 
 /* ========== SHOP ============ */
 
-#contentshop{
+#contentshop {
 	border:1px solid #000;
 	margin: -28px 0 20px;
     padding: 0;
 	background-color: #999999;
 	background-image: -webkit-gradient(linear, left center, right center, from(#999999), to(#999999), color-stop(.5,#EAEAEA)); /* Safari 4+, Chrome */
-	background-image: -webkit-linear-gradient(left, #999999 0%, #EAEAEA 50%, #999999 100%)); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image: -webkit-linear-gradient(left, #999999 0%, #EAEAEA 50%, #999999 100%); /* Chrome 10+, Safari 5.1+, iOS 5+ */
 	background-image:    -moz-linear-gradient(left, #999999 0%, #EAEAEA 50%, #999999 100%); /* Firefox 3.6-15 */
-	background-image:      -o-linear-gradient(left, #999999 0%, #EAEAEA 50%, #999999 100%)); /* Opera 11.10-12.00 */
-	background-image:         linear-gradient(to right, #999999 0%, #EAEAEA 50%, #999999 100%)); /* Firefox 16+, IE10, Opera 12.50+ */
+	background-image:      -o-linear-gradient(left, #999999 0%, #EAEAEA 50%, #999999 100%); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to right, #999999 0%, #EAEAEA 50%, #999999 100%); /* Firefox 16+, IE10, Opera 12.50+ */
 	color: #000;
 	font-size: 17px;
-	font-family: Calibri, Helvetica, Arial, sans-serif;
+	font-family: "Calibri", "Helvetica", "Arial", sans-serif;
 	letter-spacing: -1px;
 	border: 1px solid black;
 	box-shadow: 0 0 10px #000000;
@@ -696,7 +709,7 @@ black.td input {
 	color:#fff;
 	text-align:center;
 	border:none;
-	font-size:20px;"
+	font-size:20px;
 }
 
 
@@ -760,6 +773,11 @@ black.td input {
 	letter-spacing: 0;
 }
 
+span.dollar {
+	font-size:40px;
+	font-family:'Trebuchet MS';
+	font-weight:bold;
+}
 
 /* ====== Basic page ====== */
 #contentpage {
